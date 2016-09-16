@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="liteweight.css" />
     <link rel="stylesheet" href="syntax.css" />
+    <link rel="stylesheet" href="font-awesome.min.css" />
     <title>Components | Liteweight</title>
+    <meta name="description" content="Liteweight is an extremely simple to use, and simple to develop theme designed for educational purposes." />
   </head>
   <body>
-    <h1>Liteweight</h1>
-    <h4>A "minimalist" framework for educational purposes</h4>
-    <h2>Typography</h2>
+    <h1>Liteweight <a class="text-black" href="https://github.com/malsf21/liteweight"><span class="fa fa-github"></span></a></h1>
+    <h2>Components</h2>
+    <p>Here's an overview of everything that's in <b>Liteweight</b>. Liteweight is an extremely simple to use, and simple to develop theme designed for educational purposes.</p>
+    <h1>Typography</h1>
     <div class="card card-full">
       <h1>h1. Heading 1</h1>
       <h2>h2. Heading 2</h2>
@@ -19,9 +25,122 @@
       <p>
         Literally tote bag helvetica, crucifix aesthetic cliche leggings cardigan. Snackwave YOLO shabby chic, portland lyft sartorial aesthetic. Beard selvage ennui pour-over man braid slow-carb, master cleanse man bun keffiyeh bitters bespoke sriracha food truck yuccie. Squid PBR&B pork belly yr microdosing. Kombucha flexitarian quinoa four loko kickstarter health goth.
       </p>
+      <a href="#">Link</a>
+    </div>
+    <h1>Cards</h1>
+    <h2>Base Card</h2>
+    <p>Base Cards have no styling: you can add class modifiers to style them.</p>
+    <div class="card">
+      Base Card
     </div>
     <pre>
-      <span class="vg">code:</span> <span class="s">activated</span>
+      <span class="sd">&#60;div class=<span class="vg">"card</span>"&#62;</span>
+        <span>Basic Card</span>
+      <span class="sd">&#60;/div&#62;</span>
     </pre>
+    <h2>Full Card</h2>
+    <p>Fill the background of a card with <code>.card-full</code></p>
+    <div class="card card-full">
+      Full Card
+    </div>
+    <pre>
+      <span class="sd">&#60;div class=<span class="vg">"card card-full</span>"&#62;</span>
+        <span>Full Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+    </pre>
+    <h2>Coloured Cards</h2>
+    <p>Use <code>.card-bg-blue</code> or <code>.card-bg-orange</code> to colour the card backgrounds</p>
+    <div class="card card-bg-blue">
+      Blue Card
+    </div>
+    <div class="card card-bg-orange">
+      Orange Card
+    </div>
+    <pre>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bg-blue</span>"&#62;</span>
+        <span>Blue Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bg-orange</span>"&#62;</span>
+        <span>Orange Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+    </pre>
+    <h2>Bordered Cards</h2>
+    <p>Use <code>.card-bordered-blue</code> or <code>.card-bordered-orange</code> to border the cards. This works with <code>.card-full</code></p>
+    <div class="card card-bordered-blue">
+      Blue Bordered Card
+    </div>
+    <div class="card card-bordered-orange">
+      Orange Bordered Card
+    </div>
+    <pre>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bordered-blue</span>"&#62;</span>
+        <span>Blue Bordered Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bordered-orange</span>"&#62;</span>
+        <span>Orange Bordered Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+    </pre>
+    <h1>Preformatted Text</h1>
+    <p>The <code>pre</code> element has been restyled to fit the colour-scheme of liteweight.</p>
+    <pre>
+      P. Sherman
+      42 Wallaby Way
+      Sydney, NSW
+    </pre>
+    <h1>Code</h1>
+    <p>The <code>code</code> element has been restyled to fit the colour-scheme of liteweight.</p>
+    <code>.random-class</code>
+    <code>console.log("A tree");</code>
+    <code>["hip", "hip"]</code>
+    <h1>Text Utilities</h1>
+    <h2>Text Colour</h2>
+    <p>Use <code>.text-blue</code> and <code>.text-orange</code> to colourize your text!</p>
+    <p>
+      <span class="text-blue">This normal text turns into blue text.</span>
+      </br>
+      <span class="text-orange">This normal text turns into blue orange.</span>
+    </p>
+    <pre>
+      This normal text turns into <span class="sd">&#60;span class=</span><span class="vg">"text-blue"</span>&#62;blue text<span class="sd">&#60;/span&#62;</span>.
+      This normal text turns into <span class="sd">&#60;span class=</span><span class="vg">"text-orange"</span>&#62;orange text<span class="sd">&#60;/span&#62;</span>.
+    </pre>
+    <h2>Text Alignment</h2>
+    <p>Use <code>.text-*</code> to align your text.</p>
+    <p>
+      <div class="text-left">This text is left-aligned.</div>
+      <div class="text-center">This text is centered-aligned.</div>
+      <div class="text-right">This text is right-aligned.</div>
+    </p>
+    <pre>
+      <span class="sd">&#60;div class=<span class="vg">"text-left"</span>&#62;</span>This text is left-aligned.<span class="sd">&#60;/div&#62;</span>
+      <span class="sd">&#60;div class=<span class="vg">"text-center"</span>&#62;</span>This text is centered-aligned.<span class="sd">&#60;/div&#62;</span>
+      <span class="sd">&#60;div class=<span class="vg">"text-right"</span>&#62;</span>This text is right-aligned.<span class="sd">&#60;/div&#62;</span>
+    </pre>
+    <h1>Shape Utilities</h1>
+    <h2>Rounded Corners</h2>
+    <p>Use <code>.rounded</code> to round elements.</p>
+    <div class="card card-bg-orange rounded">
+      Rounded Orange Card
+    </div>
+    <div class="card card-bordered-blue rounded">
+      Rounded Blue Bordered Card
+    </div>
+    <pre>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bg-orange rounded</span>"&#62;</span>
+        <span>Orange Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+      <span class="sd">&#60;div class=<span class="vg">"card card-bordered-blue rounded</span>"&#62;</span>
+        <span>Blue Bordered Card</span>
+      <span class="sd">&#60;/div&#62;</span>
+    </pre>
+    <h2>Responsive Blocks</h2>
+    <p>Use <code>.block-responsive</code> to make block-level elements like <code>img</code> responsive (try it out by resizing your browser)</p>
+    <img class="block-responsive" src="img/dmcs.png" alt="Really Cool Logo" />
+    <pre>
+      <span class="sd">&#60;img class=<span class="vg">"block-responsive"</span> src=<span class="vg">"img/dmcs.png"</span> alt=<span class="vg">"Really Cool Logo"</span> /&#62;</span>
+    </pre>
+    <footer class="text-center">
+      <h1><a href="https://github.com/malsf21/liteweight"><span class="fa fa-github"></span></a></h1>
+    </footer>
   </body>
 </html>

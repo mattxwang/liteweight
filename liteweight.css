@@ -27,16 +27,28 @@ a {
 
 /* Text Utilities */
 
-.orange-text{
+.text-orange{
   color: #E95420;
 }
 
-.blue-text{
+.text-blue{
   color: #7AD0ED;
+}
+
+.text-black{
+  color: #000000;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 /* Cards */
@@ -52,12 +64,12 @@ a {
   background-color:  #f5f7f9;
 }
 
-.card-blue{
+.card-bg-blue{
   background-color: #7AD0ED;
   color:#FFFFFF;
 }
 
-.card-orange{
+.card-bg-orange{
   background-color: #E95420;
   color:#FFFFFF;
 }
@@ -103,9 +115,32 @@ a {
   color: #E95420;
 }
 
+/* Preformatted and Code */
+
+code{
+  border-radius:4px;
+  color:#E95420;
+  padding: 4px;
+}
+
+pre {
+  padding-top: 1rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  border-left: 2px solid #7AD0ED;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}
+
 /* Shape Utility */
 
-.img-responsive{
+.block-responsive{
   display:block;
   max-width: 100%;
   height: auto;
@@ -118,7 +153,7 @@ a {
 /* Specific Classes */
 
 .header-image{
-  max-width: 25%;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
