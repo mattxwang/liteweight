@@ -150,10 +150,17 @@ pre {
   border-radius: 3px;
 }
 
+.list-unstyled{
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
 /* Specific Classes */
 
 .header-image{
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 9000px;
 }
