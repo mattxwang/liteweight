@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* SASS variables */
+
+$font-strong: #333;
+$font-normal: #566b78;
+$background-light: #f5f7f9;
+$orange: #E95420;
+$blue: #7AD0ED;
+
+/* Basic Styling */
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 5rem 1rem;
+  color: $font-normal;
+}
+
+h1, h2, strong {
+  color: $font-strong;
+}
+
+a {
+  color: $orange;
+}
+
+/* Text Utilities */
+
+.text-orange{
+  color: $orange;
+}
+
+.text-blue{
+  color: $blue;
+}
+
+.text-black{
+  color: black;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+/* Cards */
+
+.card {
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-full{
+  background-color: $background-light;
+}
+
+.card-bg-blue{
+  background-color: $blue;
+  color:white;
+}
+
+.card-bg-orange{
+  background-color: $orange;
+  color:white;
+}
+
+.card-bordered-blue{
+  border: 1px solid $blue;
+}
+
+.card-bordered-orange{
+  border: 1px solid $orange;
+}
+
+/* Buttons */
+
+.button{
+  color: white;
+  background-color: $background-light;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-blue{
+  background-color: $blue;
+}
+
+.button-orange{
+  background-color: $orange;
+}
+
+.button-lightweight-blue{
+  background: none;
+  border: 1px solid $blue;
+  color: $blue;
+}
+
+.button-lightweight-orange{
+  background: none;
+  border: 1px solid $orange;
+  color: $orange;
+}
+
+/* Preformatted and Code */
+
+code{
+  border-radius:4px;
+  color: orange;
+  padding: 4px;
+}
+
+pre {
+  padding-top: 1rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  border-left: 2px solid $blue;
+}
+
+code,
+pre {
+  background: $background-light;
+  border-bottom: 1px solid #d8dee9;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}
+
+/* Shape Utility */
+
+.block-responsive{
+  display:block;
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded{
+  border-radius: 3px;
+}
+
+.list-unstyled{
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+/* Specific Classes */
+
+.header-image{
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9000px;
+}
