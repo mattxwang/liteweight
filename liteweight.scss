@@ -2,11 +2,23 @@
 
 /* SASS variables */
 
+$font-size-root: 16px;
 $font-strong: #333;
 $font-normal: #566b78;
 $background-light: #f5f7f9;
 $orange: #E95420;
 $blue: #7AD0ED;
+$spacer: 1rem;
+
+/* Secondary SASS variables */
+
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+$heading-margin-bottom: ($spacer / 2);
 
 /* Basic Styling */
 
@@ -14,6 +26,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: $font-size-root;
 }
 
 body {
@@ -21,12 +34,40 @@ body {
   max-width: 50rem;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 5rem 1rem;
+  padding: 5rem $spacer;
   color: $font-normal;
+}
+
+h1{
+  font-size: $font-size-h1;
+}
+
+h2{
+  font-size: $font-size-h2;
+}
+
+h3{
+  font-size: $font-size-h3;
+}
+
+h4{
+  font-size: $font-size-h4;
+}
+
+h5{
+  font-size: $font-size-h5;
+}
+
+h6{
+  font-size: $font-size-h6;
 }
 
 h1, h2, strong {
   color: $font-strong;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: $heading-margin-bottom;
 }
 
 a {
@@ -63,9 +104,9 @@ a {
 
 .card {
   display: block;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: $spacer;
+  margin-top: ($spacer / 2);
+  margin-bottom: ($spacer / 2);
 }
 
 .card-full{
@@ -95,7 +136,7 @@ a {
 .button{
   color: white;
   background-color: $background-light;
-  padding: 10px 20px 10px 20px;
+  padding: ($spacer / 2) $spacer ($spacer / 2) $spacer;
   text-decoration: none;
 }
 
@@ -170,5 +211,5 @@ pre {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 9000px;
+  border-radius: 50%;
 }
