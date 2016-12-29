@@ -1,0 +1,61 @@
+.card {
+  display: block;
+  padding: $spacer;
+  margin-top: ($spacer / 2);
+  margin-bottom: ($spacer / 2);
+}
+
+.card-full{
+  background-color: $background-light;
+}
+
+.card-bg-blue{
+  background-color: $blue;
+  color:white;
+}
+
+.card-bg-orange{
+  background-color: $orange;
+  color:white;
+}
+
+.card-bordered-blue{
+  border: 1px solid $blue;
+}
+
+.card-bordered-orange{
+  border: 1px solid $orange;
+}
+
+/* Buttons */
+
+.button{
+  color: white;
+  background-color: $background-light;
+  padding: ($spacer / 2) $spacer ($spacer / 2) $spacer;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-blue{
+  background-color: $blue;
+}
+
+.button-orange{
+  background-color: $orange;
+}
+
+.button-lightweight-blue{
+  background: none;
+  border: 1px solid $blue;
+  color: $blue;
+}
+
+.button-lightweight-orange{
+  background: none;
+  border: 1px solid $orange;
+  color: $orange;
+}

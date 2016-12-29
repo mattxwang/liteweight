@@ -1,0 +1,20 @@
+code{
+  border-radius:4px;
+  color: orange;
+  padding: 4px;
+}
+
+pre {
+  padding-top: 1rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  border-left: 2px solid $blue;
+}
+
+code,
+pre {
+  background: $background-light;
+  border-bottom: 1px solid #d8dee9;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}
