@@ -1,6 +1,6 @@
 code{
   border-radius:4px;
-  color: orange;
+  color: $primary;
   padding: 4px;
 }
 
@@ -8,7 +8,7 @@ pre {
   padding-top: 1rem;
   overflow: auto;
   white-space: pre-wrap;
-  border-left: 2px solid $blue;
+  border-left: 2px solid $secondary;
 }
 
 code,

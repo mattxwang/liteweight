@@ -1,19 +1,40 @@
-/* SASS variables */
+// Colours //
+
+
+$red: 			#F01A1A;
+$orange: 		#E95420;
+$yellow: 		#D9D92B;
+$green: 		#2BD937;
+$blue:	 		#7AD0ED;
+$indigo: 		#6878ED;
+$violet: 		#A268ED;
+
+$black:			#000;
+$grey: 			#333;
+$light-grey:	#566B78;
+$off-white: 	#F5f7F9;
+$white: 		#FFF;
+
+// SASS variables //
+
+$font-default: "Roboto", "Helvetica", "Arial", sans-serif;
 
 $font-size-root: 16px;
-$font-strong: #333;
-$font-normal: #566b78;
-$background-light: #f5f7f9;
-$orange: #E95420;
-$blue: #7AD0ED;
+$font-strong: $grey;
+$font-normal: $light-grey;
+$background-light: $off-white;
+$primary: $orange;
+$secondary: $blue;
 $spacer: 1rem;
 
-/* Secondary SASS variables */
+// Secondary SASS variables //
 
-$font-size-h1: 2.5rem;
-$font-size-h2: 2rem;
-$font-size-h3: 1.75rem;
-$font-size-h4: 1.5rem;
-$font-size-h5: 1.25rem;
-$font-size-h6: 1rem;
+$font-size-1: 2.5rem;
+$font-size-2: 2rem;
+$font-size-3: 1.75rem;
+$font-size-4: 1.5rem;
+$font-size-5: 1.25rem;
+$font-size-6: 1rem;
 $heading-margin-bottom: ($spacer / 2);
+
+$border-radius: 3px;

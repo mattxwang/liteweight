@@ -1,6 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
-/* SASS variables */
-/* Secondary SASS variables */
 html {
   box-sizing: border-box;
   padding: 0;
@@ -13,27 +11,22 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   padding: 5rem 1rem;
-  color: #566b78; }
+  color: #566B78; }
 
-h1 {
+.title .is-1 {
   font-size: 2.5rem; }
-
-h2 {
+.title .is-2 {
   font-size: 2rem; }
-
-h3 {
+.title .is-3 {
   font-size: 1.75rem; }
-
-h4 {
+.title .is-4 {
   font-size: 1.5rem; }
-
-h5 {
+.title .is-5 {
   font-size: 1.25rem; }
-
-h6 {
+.title .is-6 {
   font-size: 1rem; }
 
-h1, h2, strong {
+.is-1, .is-2, strong {
   color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,7 +43,7 @@ a {
 
 code {
   border-radius: 4px;
-  color: orange;
+  color: #E95420;
   padding: 4px; }
 
 pre {
@@ -61,7 +54,7 @@ pre {
 
 code,
 pre {
-  background: #f5f7f9;
+  background: #F5f7F9;
   border-bottom: 1px solid #d8dee9;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: initial; }
@@ -284,7 +277,7 @@ pre {
   color: #7AD0ED; }
 
 .text-black {
-  color: black; }
+  color: #000; }
 
 .text-left {
   text-align: left; }
@@ -302,7 +295,7 @@ pre {
   margin-bottom: 0.5rem; }
 
 .card-full {
-  background-color: #f5f7f9; }
+  background-color: #F5f7F9; }
 
 .card-bg-blue {
   background-color: #7AD0ED;
@@ -321,7 +314,7 @@ pre {
 /* Buttons */
 .button {
   color: white;
-  background-color: #f5f7f9;
+  background-color: #F5f7F9;
   padding: 0.5rem 1rem 0.5rem 1rem;
   text-decoration: none; }
 
