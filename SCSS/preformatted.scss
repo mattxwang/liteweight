@@ -1,20 +1,29 @@
 code{
   border-radius:4px;
-  color: $primary;
   padding: 4px;
+  @each $key, $value in $colours {
+    .is-#{$key} {
+      color: $value;
+    }
+  }
 }
 
 pre {
   padding-top: 1rem;
   overflow: auto;
   white-space: pre-wrap;
-  border-left: 2px solid $secondary;
+  
+  @each $key, $value in $colours {
+    .is-#{$key} {
+      border-left: 2px solid $value;
+    }
+  }
 }
 
 code,
 pre {
   background: $background-light;
-  border-bottom: 1px solid #d8dee9;
+  border-bottom: 1px solid $pre-border-bottom;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: initial;
 }

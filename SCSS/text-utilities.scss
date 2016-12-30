@@ -1,13 +1,9 @@
-.text-orange{
-  color: $orange;
-}
-
-.text-blue{
-  color: $blue;
-}
-
-.text-black{
-  color: $black;
+.text {
+	@each $key, $value in $colours{
+		.is-#{$key} {
+			color: $value;
+		}
+	}
 }
 
 .text-left{

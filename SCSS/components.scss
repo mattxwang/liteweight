@@ -9,28 +9,30 @@
   background-color: $background-light;
 }
 
-.card-bg-blue{
-  background-color: $blue;
-  color:white;
+@each $key, $value in $darks {
+  .card-bg-#{$key} {
+    background-color: $value;
+    color: $white;
+  }
 }
 
-.card-bg-orange{
-  background-color: $orange;
-  color:white;
+@each $key, $value in $lights {
+  .card-bg-#{$key} {
+    background-color: $value;
+    color: $font-normal;
+  }
 }
 
-.card-bordered-blue{
-  border: 1px solid $blue;
-}
-
-.card-bordered-orange{
-  border: 1px solid $orange;
+@each $key, $value in $colours {
+  .card-bordered-#{$key} {
+    border: 1px solid $value;
+  }
 }
 
 /* Buttons */
 
 .button{
-  color: white;
+  color: $white;
   background-color: $background-light;
   padding: ($spacer / 2) $spacer ($spacer / 2) $spacer;
   text-decoration: none;
@@ -40,22 +42,25 @@
   text-decoration: none;
 }
 
-.button-blue{
-  background-color: $blue;
+
+@each $key, $value in $darks {
+  .button-#{$key} {
+    background-color: $value;
+    color: $font-normal;
+  }  
 }
 
-.button-orange{
-  background-color: $orange;
+@each $key, $value in $lights {
+  .button-#{$key} {
+    background-color: $value;
+    color: $white;
+  }  
 }
 
-.button-lightweight-blue{
-  background: none;
-  border: 1px solid $blue;
-  color: $blue;
-}
-
-.button-lightweight-orange{
-  background: none;
-  border: 1px solid $orange;
-  color: $orange;
+@each $key, $value in $colours {
+  .button-lightweight-#{$key} {
+    background: none;
+    border: 1px solid $value;
+    color: $value;
+  }
 }
