@@ -1,4 +1,6 @@
-// Colours //
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+// Colours \\
 
 $red: 				#F01A1A;
 $orange: 			#E95420;
@@ -14,20 +16,20 @@ $light-grey:		#566B78;
 $off-white: 		#F5f7F9;
 $white: 			#FFF;
 
-// Colour correlation //
+// Colour correlation \\
 
 $primary: 			$orange;
 $secondary: 		$blue;
 $success: 			$green;
 $danger:			$red;
 $caution:			$yellow;
-$info:				$blue;
+$info:				$indigo;
 
 $font-strong: 		$grey;
 $font-normal: 		$light-grey;
 $background-light: 	$off-white;
 
-// WARNING! Do not edit this list because it will change the class names and possibly cause errors. //
+// WARNING! Do not edit this list because it will change the class names and possibly cause errors. \\
 $colours: (
 	"red": 			$red,
 	"orange": 		$orange,
@@ -49,33 +51,7 @@ $colours: (
 	"info":			$info,
 );
 
-// You may need to reorganize lights and darks if you change colors //
-// Will find a fix in the future //
-$lights: (
-	"orange": 		$orange,
-	"yellow": 		$yellow,
-	"blue": 		$blue,
-	"light-grey": 	$light-grey,
-
-	"primary":		$primary,
-	"secondary":	$secondary,
-	"caution":		$caution,
-	"info":			$info
-);
-
-$darks: (
-	"red": 			$red,
-	"green": 		$green,
-	"indigo": 		$indigo,
-	"violet": 		$violet,
-	"black": 		$black,
-	"grey": 		$grey,
-
-	"success":		$success,
-	"danger": 		$danger
-
-);
-// SASS variables //
+// SASS variables \\
 
 $font-default: 		"Roboto", "Helvetica", "Arial", sans-serif;
 
@@ -83,7 +59,7 @@ $font-size-root: 	16px;
 
 $spacer: 			1rem;
 
-// Secondary SASS variables //
+// Secondary SASS variables \\
 
 $font-size-1: 		2.5rem;
 $font-size-2: 		2rem;

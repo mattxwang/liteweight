@@ -2,13 +2,63 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Components</title>
+	<title>Liteweight - Components</title>
 	<link rel="stylesheet" type="text/css" href="liteweight.css">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	
+	<h1 class="title title-1">Liteweight</h1>
+	<div class="card card-full">
+		<h1 class="title title-1">Typography</h1>		
+			<h1 class="title title-1">Heading 1 (<code>class="title title-1"</code>)</h1>
+			<h2 class="title title-2">Heading 2 (<code>class="title title-2"</code>)</h2>
+			<h3 class="title title-3">Heading 3 (<code>class="title title-3"</code>)</h3>
+			<h4 class="title title-4">Heading 4 (<code>class="title title-4"</code>)</h4>
+			<h5 class="title title-5">Heading 5 (<code>class="title title-5"</code>)</h5>
+			<h6 class="title title-6">Heading 6 (<code>class="title title-6"</code>)</h6>
+		<p class="text">
+Literally tote bag helvetica, crucifix aesthetic cliche leggings cardigan. Snackwave YOLO shabby chic, portland lyft sartorial aesthetic. Beard selvage ennui pour-over man braid slow-carb, master cleanse man bun keffiyeh bitters bespoke sriracha food truck yuccie. Squid PBR&amp;B pork belly yr microdosing. Kombucha flexitarian quinoa four loko kickstarter health goth.
+		</p>
+		<p class="text">
+			<a href="index.html">Link</a>
+		</p>
+	</div>
+<pre class="pre-primary">
+<span class="sc">p class=<span class="vc">"text"</span></span> &rarr; class "text" needed for proper text styling
+<span class="sc">a href=<span class="vc">"index.html"</span></span> &rarr; no class needed for hyperlinks
+</pre>
+	<div class="card">Card</div>
+<pre class="pre-primary">
+<span class="sc">div class=</span><span class="vc">"card"</span>
+</pre>
+<div class="card card-full">Card Full</div>
+<pre class="pre-primary">
+<span class="sc">div class=</span><span class="vc">"card card-full"</span> &rarr; card-full adds a light-grey background. You can customize this is liteweight/variables.scss with <span class="sc">$background-light</span>
+</pre>
+<div class="card card-bg-primary">Card background (primary)</div>
+<pre class="pre-primary">
+<span class="sc">div class=</span><span class="vc">"card card-bg-*"</span> &rarr; <span class="sc">*</span> referring to the colours in <span class="sc">$colours</span>
+</pre>
+<div class="card card-bordered-primary">Card Bordered (primary)</div>
+<pre class="pre-primary">
+<span class="sc">div class=</span><span class="vc">"card card-bordered-*"</span> &rarr; <span class="sc">*</span> referring to the colours in <span class="sc">$colours</span>
+</pre>
+
+<div class="card card-bordered-primary">
+	<h2 class="title title-2">Text</h2>
+	<h3 class="title title-3">Lists</h3>
+	<ul class="list-unstyled">
+		<li>This</li>
+		<li>list</li>
+		<li>is</li>
+		<li>unstyled</li>
+		<li><code><span class="sc">ul class=</span><span class="vc">"list-unstyled"</span></code></li>
+	</ul>
+</div>
+<div class="text-left"><pre class="pre-primary">text-left</pre></div>
+<div class="text-center"><pre class="pre-primary">text-center</pre></div>
+<div class="text-right"><pre class="pre-primary">text-right</pre></div>
 </body>
 </html>

@@ -3,25 +3,20 @@
   padding: $spacer;
   margin-top: ($spacer / 2);
   margin-bottom: ($spacer / 2);
+  border-radius: $border-radius;
 }
 
 .card-full{
   background-color: $background-light;
 }
 
-@each $key, $value in $darks {
+@each $key, $value in $colours {
   .card-bg-#{$key} {
     background-color: $value;
     color: $white;
   }
 }
 
-@each $key, $value in $lights {
-  .card-bg-#{$key} {
-    background-color: $value;
-    color: $font-normal;
-  }
-}
 
 @each $key, $value in $colours {
   .card-bordered-#{$key} {
@@ -36,21 +31,14 @@
   background-color: $background-light;
   padding: ($spacer / 2) $spacer ($spacer / 2) $spacer;
   text-decoration: none;
+  border-radius: $border-radius;
 }
 
 .button:hover {
   text-decoration: none;
 }
 
-
-@each $key, $value in $darks {
-  .button-#{$key} {
-    background-color: $value;
-    color: $font-normal;
-  }  
-}
-
-@each $key, $value in $lights {
+@each $key, $value in $colours {
   .button-#{$key} {
     background-color: $value;
     color: $white;
@@ -62,5 +50,10 @@
     background: none;
     border: 1px solid $value;
     color: $value;
+
+    &:hover {
+      background-color: $value;
+      color: $white;
+    }
   }
 }

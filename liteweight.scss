@@ -13,15 +13,14 @@ malsf21/liteweight
 By: Nick O'Brien (obrien66 on Github)
 */
 
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+// All of these files can be found and edited in liteweight/ \\
 
-// All of these files can be found and edited in SCSS/
+@import "liteweight/variables";
+@import "liteweight/basics";
+@import "liteweight/text-utilities";
+@import "liteweight/components";
+@import "liteweight/preformatted";
+@import "liteweight/shape-utilities";
+@import "liteweight/misc";
+@import "liteweight/syntax";
 
-@import "SCSS/variables";
-@import "SCSS/basics";
-@import "SCSS/misc";
-@import "SCSS/preformatted";
-@import "SCSS/shape-utilities";
-@import "SCSS/syntax";
-@import "SCSS/text-utilities";
-@import "SCSS/components";

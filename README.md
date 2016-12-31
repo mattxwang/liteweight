@@ -19,7 +19,7 @@ While editing
 sass --watch  liteweight.scss:liteweight.css
 ```
 
-Once Finished
+To Minfiy your CSS
 ```
 sass liteweight.scss liteweight.css --style=compressed
 ```
