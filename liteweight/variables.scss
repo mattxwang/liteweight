@@ -13,6 +13,7 @@ $violet:	 		#A268ED;
 $black:				#000;
 $grey: 				#333;
 $light-grey:		#566B78;
+$dark-grey:			#4E4F51;
 $off-white: 		#F5f7F9;
 $white: 			#FFF;
 
@@ -28,6 +29,11 @@ $info:				$indigo;
 $font-strong: 		$grey;
 $font-normal: 		$light-grey;
 $background-light: 	$off-white;
+
+$nav-background:	$background-light;
+$nav-text:			$font-normal;
+$nav-hover: 		#C8CACC;
+$nav-active:		$primary;
 
 // WARNING! Do not edit this list because it will change the class names and possibly cause errors. \\
 $colours: (
@@ -52,7 +58,6 @@ $colours: (
 );
 
 // SASS variables \\
-
 $font-default: 		"Roboto", "Helvetica", "Arial", sans-serif;
 
 $font-size-root: 	16px;

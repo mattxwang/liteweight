@@ -549,13 +549,44 @@ pre {
   max-width: 100%;
   height: auto; }
 
-.rounded {
-  border-radius: 3px; }
-
 .list-unstyled {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+nav {
+  width: 100%;
+  background-color: #F5f7F9;
+  border-radius: 3px;
+  color: #566B78; }
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F5f7F9;
+  border-radius: 3px; }
+
+.nav-item {
+  float: left; }
+
+.nav-item a {
+  display: block;
+  color: #566B78;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none; }
+
+.nav-item a:hover {
+  background-color: #C8CACC;
+  text-decoration: none; }
+
+.active {
+  border-bottom: 3px solid #E95420; }
+
+.nav-item .active {
+  color: #F5f7F9; }
 
 .header-image {
   max-width: 50%;

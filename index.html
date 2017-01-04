@@ -19,17 +19,27 @@
 			<h5 class="title title-5">Heading 5 (<code>class="title title-5"</code>)</h5>
 			<h6 class="title title-6">Heading 6 (<code>class="title title-6"</code>)</h6>
 		<p class="text">
-Literally tote bag helvetica, crucifix aesthetic cliche leggings cardigan. Snackwave YOLO shabby chic, portland lyft sartorial aesthetic. Beard selvage ennui pour-over man braid slow-carb, master cleanse man bun keffiyeh bitters bespoke sriracha food truck yuccie. Squid PBR&amp;B pork belly yr microdosing. Kombucha flexitarian quinoa four loko kickstarter health goth.
+The text class is a foundation for more modifier classes. You can change the colour with <code><span class="vc">text-*</span></code> (<code>*</code> referring to all the available colours in <code><span class="sc">$colours</span></code>)
+		</p>
+		<p class="text">
+			<code>
+				<span class="sc"> p class=</span><span class="vc">"text"</span> 
+			</code>
 		</p>
 		<p class="text">
 			<a href="index.html">Link</a>
+			<code><span class="sc">a href=</span><span class="vc">"#"</span> </code>
 		</p>
 	</div>
 	<pre class="pre-primary">
 <span class="sc">p class=<span class="vc">"text"</span></span> &rarr; class "text" needed for proper text styling
 <span class="sc">a href=<span class="vc">"index.html"</span></span> &rarr; no class needed for hyperlinks
 	</pre>
-		<div class="card">Card</div>
+<h2 class="title title-2">Cards</h2>
+<p class="text">
+	Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
+</p>
+<div class="card">Card</div>
 	<pre class="pre-primary">
 <span class="sc">div class=</span><span class="vc">"card"</span>
 	</pre>
@@ -57,8 +67,41 @@ Literally tote bag helvetica, crucifix aesthetic cliche leggings cardigan. Snack
 			<li><code><span class="sc">ul class=</span><span class="vc">"list-unstyled"</span></code></li>
 		</ul>
 	</div>
+	<h2 class="title title-2">Left, Right, and Center Text</h2>
+	The following classes can be used with <code><span class="sc">div</span></code> to modify their position.
 	<div class="text-left"><pre class="pre-primary">text-left</pre></div>
 	<div class="text-center"><pre class="pre-primary">text-center</pre></div>
 	<div class="text-right"><pre class="pre-primary">text-right</pre></div>
+	<h2 class="title title-2">Navbar</h2>
+	<p class="text">
+		Just in case you need to add navigation, here is a simple navbar. (As of now there are no breakpoints, Will be updated soon)
+	</p>
+	<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-item active"><a>Item</a></li>
+		  	<li class="nav-item"><a>Item</a></li>
+		  	<li class="nav-item"><a>Item</a></li>
+		  	<li class="nav-item"><a>Item</a></li>
+		</ul>
+	</nav>
+	<pre class="pre-primary">
+<span class="sc">nav class=</span><span class="vc">"nav"</span>
+	<span class="sc">ul class=</span><span class="vc">"nav-list"</span>
+		<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">class=</span><span class="vc">"active"</span>  <span class="sc">Item /a /li</span>
+	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
+	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
+	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
+	<span class="sc">/ul</span>
+<span class="sc">/nav</span>		
+	</pre>
+	<div class="card card-full">
+		<h2 class="title title-2">Image</h2>
+		<p class="text">Just a handy-dandy responsive image class</p>
+
+		<img class="block-responsive" src="https://malsf21.github.io/liteweight/img/dmcs.png" alt="Really Cool Logo" />
+		<pre class="pre-primary">
+<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>
+ </pre>
+	</div>
 </body>
 </html>
