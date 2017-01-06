@@ -16,10 +16,10 @@ Here's a general idea of each of the important files:
 
 While editing
 ```
-sass --watch  liteweight.scss:liteweight.css
+sass --watch  liteweight.scss:css/liteweight.css
 ```
 
 To Minfiy your CSS
 ```
-sass liteweight.scss liteweight.css --style=compressed
+sass liteweight.scss css/liteweight.css --style=compressed
 ```

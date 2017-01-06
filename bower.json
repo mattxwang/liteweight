@@ -1,0 +1,22 @@
+{
+  "name": "liteweight",
+  "description": "A simple css framework",
+  "main": "css/liteweight.min.css",
+  "authors": [
+    "Nicholas O'Brien and Matthew Wang"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "css",
+    "framework"
+  ],
+  "homepage": "https://github.com/obrien66/liteweight",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
