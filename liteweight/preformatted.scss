@@ -1,0 +1,32 @@
+code{
+  border-radius:4px;
+  padding: 4px;
+  @each $key, $value in $colours {
+    .code-#{$key} {
+      color: $value;
+    }
+  }
+}
+
+pre {
+  padding-top: 1rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding-left: 1em;
+  color: inherit;
+}
+
+@each $key, $value in $colours {
+  .pre-#{$key} {
+    border-left: 2px solid $value;
+  }
+}
+
+code,
+pre {
+  color: inherit;
+  background: $background-light;
+  border-bottom: 1px solid $pre-border-bottom;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial;
+}

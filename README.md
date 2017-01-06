@@ -1,6 +1,6 @@
 # liteweight
 
-liteweight is a really small CSS framework I made to help teach basic HTML, CSS, and maybe some SASS. It promotes clean, responsive design, but also is in no means perfect. It's just here to be small and educational. If you've got any pointers or bug fixes, PR's and forks are fully welcome.
+Forked from Matthew Wang's original [liteweight repo](https://github.com/malsf21/liteweight/) to learn sass. I tried to modularize the code and add more colour support, along with some more components.
 
 ## File Structure
 
@@ -9,15 +9,17 @@ Here's a general idea of each of the important files:
 | File Name | Description |
 |-----------|-------------|
 | `lightweight.css` | The one CSS file you need. Compiled from `lightweight.scss`. Use this for distribution/download. |
-| `lightweight.min.css` | `liteweight.css`, but minified. |
-| `lightweight.scss` | The SCSS file that compiles into `lightweight.css`. Use to modify variables and general scheme. |
+| `lightweight.scss` | The SCSS file that compiles into `lightweight.css`.  |
+| `SCSS/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
 
 ## Useful Commands
 
+While editing
 ```
-sass liteweight.scss liteweight.css
+sass --watch  liteweight.scss:css/liteweight.css
 ```
 
+To Minfiy your CSS
 ```
-sass liteweight.scss liteweight.css --style=compressed
+sass liteweight.scss css/liteweight.css --style=compressed
 ```
