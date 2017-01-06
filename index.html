@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Liteweight - Components</title>
-	<link rel="stylesheet" type="text/css" href="liteweight.css">
+	<link rel="stylesheet" type="text/css" href="css/liteweight.css">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,14 +85,28 @@ The text class is a foundation for more modifier classes. You can change the col
 		</ul>
 	</nav>
 	<pre class="pre-primary">
-<span class="sc">nav class=</span><span class="vc">"nav"</span>
-	<span class="sc">ul class=</span><span class="vc">"nav-list"</span>
-		<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">class=</span><span class="vc">"active"</span>  <span class="sc">Item /a /li</span>
-	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
-	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
-	  	<span class="sc">li class=</span><span class="vc">"nav-item"</span> <span class="sc">a href=<span class="vc">"#"</span></span>  <span class="sc">Item /a /li</span>
-	<span class="sc">/ul</span>
-<span class="sc">/nav</span>		
+&lt;<span class="sc">nav class=</span><span class="vc">"nav"</span>&gt;
+  &lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
+    &lt;<span class="sc">li class=</span><span class="vc">"nav-item"</span>&gt; &lt;<span class="sc">a href=<span class="vc">"#"</span></span>&gt;  <span class="sc">class=</span><span class="vc">"active"</span>  <span class="sc">Item &lt;/a&gt;&lt;/li&gt;</span>
+    &lt;<span class="sc">li class=</span><span class="vc">"nav-item"</span>&gt; &lt;<span class="sc">a href=<span class="vc">"#"</span></span>&gt;  <span class="sc">Item &lt;/a&gt;&lt;/li&gt;</span>
+    &lt;<span class="sc">li class=</span><span class="vc">"nav-item"</span>&gt; &lt;<span class="sc">a href=<span class="vc">"#"</span></span>&gt;  <span class="sc">Item &lt;/a&gt;&lt;/li&gt;</span>
+    &lt;<span class="sc">li class=</span><span class="vc">"nav-item"</span>&gt; &lt;<span class="sc">a href=<span class="vc">"#"</span></span>&gt;  <span class="sc">Item &lt;/a&gt;&lt;/li&gt;</span>
+  &lt;<span class="sc">/ul</span>&gt;
+&lt;<span class="sc">/nav</span>&gt;		
+	</pre>
+	<ul class="v-nav">
+		<li class="v-nav-item"><a>Vertical navbar item</a></li>
+		<li class="v-nav-item"><a>Vertical navbar item</a></li>
+		<li class="v-nav-item"><a>Vertical navbar item</a></li>
+		<li class="v-nav-item"><a>Vertical navbar item</a></li>
+	</ul>
+	<pre class="pre-primary">
+&lt;<span class="sc">ul class=</span><span class="vc">"v-nav"</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+&lt;/<span class="sc">ul</span>&gt;
 	</pre>
 	<div class="card card-full">
 		<h2 class="title title-2">Image</h2>
@@ -100,8 +114,50 @@ The text class is a foundation for more modifier classes. You can change the col
 
 		<img class="block-responsive" src="https://malsf21.github.io/liteweight/img/dmcs.png" alt="Really Cool Logo" />
 		<pre class="pre-primary">
-<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>
+&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
  </pre>
 	</div>
+	<div class="card card-full">
+		<h1 class="title title-1">Dropdowns and buttons</h1>
+		<h2 class="title title-2">Dropdowns</h2>
+		<p class="text">Available in all colours and works with most classes</p>
+		<div class="dropdown">
+	  		<a class="button button-liteweight-primary">Mouse over me</a>
+	  		<div class="dropdown-content">
+	    		<ul class="list-unstyled">
+	    			<li><a>Dropdown link</a></li>
+	    			<li><a>Dropdown link</a></li>
+	    			<li><a>Dropdown link</a></li>
+	    			<li><a>Dropdown link</a></li>
+	    		</ul>
+	  		</div>
+		</div>
+		<pre class="pre-primary">
+&lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
+	&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
+	&lt;<span class="sc">div class=</span><span class="vc">"dropdown-content"</span>&gt;
+		&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
+	    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    &lt;/<span class="sc">ul</span>&gt;
+	 &lt;/<span class="sc">div</span>&gt;
+&lt;/<span class="sc">div</span>&gt;
+		</pre>
+		<h2 class="title title-2">Buttons</h2>
+		<p>Also available in all colours and in two variations</p>
+		<pre class="pre-primary">
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span>&gt;Button&lt;/<span class="sc">a</span>&gt;
+		</pre>
+		<a class="button button-liteweight-primary">Button</a>
+		<a class="button button-liteweight-secondary">Button</a>
+		<a class="button button-liteweight-success">Button</a>
+		<a class="button button-liteweight-danger">Button</a>
+		<a class="button button-liteweight-caution">Button</a>
+		<a class="button button-liteweight-info">Button</a>
+	</div>
+	
+
 </body>
 </html>

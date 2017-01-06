@@ -24,17 +24,37 @@ nav {
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
+    
 }
-
+.active {
+    border-bottom: 3px solid $primary;
+}
 .nav-item a:hover {
     background-color: $nav-hover;
     text-decoration: none;
 }
 
-.active {
-    border-bottom: 3px solid $primary;
-}
-
 .nav-item .active {
     color: $off-white;
+}
+
+.v-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $background-light;
+    border-radius: $border-radius;
+}
+
+.v-nav-item a {
+    display: block;
+    color: $v-nav-text;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.v-nav-item:hover {
+    background-color: $nav-hover;
+    color: white;
 }
