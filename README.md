@@ -1,6 +1,6 @@
 # liteweight
 
-Forked from Matthew Wang's original [liteweight repo](https://github.com/malsf21/liteweight/) to learn sass. I tried to modularize the code and add more colour support, along with some more components.
+liteweight is a really small CSS framework I made to help teach basic HTML, CSS, and maybe some SASS. It promotes clean, responsive design, but also is in no means perfect. It's just here to be small and educational. If you've got any pointers or bug fixes, PR's and forks are fully welcome.
 
 ## File Structure
 
