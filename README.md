@@ -9,15 +9,17 @@ Here's a general idea of each of the important files:
 | File Name | Description |
 |-----------|-------------|
 | `lightweight.css` | The one CSS file you need. Compiled from `lightweight.scss`. Use this for distribution/download. |
-| `lightweight.min.css` | `liteweight.css`, but minified. |
-| `lightweight.scss` | The SCSS file that compiles into `lightweight.css`. Use to modify variables and general scheme. |
+| `lightweight.scss` | The SCSS file that compiles into `lightweight.css`.  |
+| `SCSS/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
 
 ## Useful Commands
 
+While editing
 ```
-sass liteweight.scss liteweight.css
+sass --watch  liteweight.scss:css/liteweight.css
 ```
 
+To Minfiy your CSS
 ```
-sass liteweight.scss liteweight.css --style=compressed
+sass liteweight.scss css/liteweight.css --style=compressed
 ```

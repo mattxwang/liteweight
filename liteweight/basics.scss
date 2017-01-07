@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: $font-size-root;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 50rem;
+  font-family: $font-default;
+  line-height: 1.5;
+  padding: 5rem $spacer;
+  color: $font-normal;
+}
