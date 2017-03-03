@@ -1,0 +1,15 @@
+{
+  "name": "liteweight",
+  "description": "A small educational CSS framework.",
+  "version": "1.1.0",
+  "homepage": "https://malsf21.github.io/liteweight",
+  "repository": "malsf21/liteweight",
+  "author": "Matthew Wang",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}

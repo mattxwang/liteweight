@@ -8,18 +8,24 @@ Here's a general idea of each of the important files:
 
 | File Name | Description |
 |-----------|-------------|
-| `lightweight.css` | The one CSS file you need. Compiled from `lightweight.scss`. Use this for distribution/download. |
+| `dist/` | The folder that contains final distribution files, in `.css` and `.min.css` format |
 | `lightweight.scss` | The SCSS file that compiles into `lightweight.css`.  |
-| `SCSS/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
+| `lightweight/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
 
-## Useful Commands
+## Development
 
-While editing
-```
-sass --watch  liteweight.scss:css/liteweight.css
+We use [Grunt](https://gruntjs.com) to help us develop things!
+
+First, we need to install our dependencies, using npm.
+
+```bash
+$ npm install
 ```
 
-To Minfiy your CSS
+Then, to compile `liteweight.scss` into some awesome, nicely minified code, run our default grunt task.
+
+```bash
+$ grunt
 ```
-sass liteweight.scss css/liteweight.css --style=compressed
-```
+
+And now your code is nicely packaged in `dist/`! Awesome!

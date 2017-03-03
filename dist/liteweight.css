@@ -8,9 +8,9 @@
 License MIT
 
 by Matthew Wang https://matthewwang.me
-   Nick O'Brien http://obrien.tec
+   Nick O'Brien http://obrien.tech
 */
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 html {
   box-sizing: border-box;
   padding: 0;
@@ -27,49 +27,70 @@ body {
 
 .text .text-red {
   color: #F01A1A; }
+
 .text .text-orange {
   color: #E95420; }
+
 .text .text-yellow {
   color: #D9D92B; }
+
 .text .text-green {
   color: #2BD937; }
+
 .text .text-blue {
   color: #7AD0ED; }
+
 .text .text-indigo {
   color: #6878ED; }
+
 .text .text-violet {
   color: #A268ED; }
+
 .text .text-black {
   color: #000; }
+
 .text .text-grey {
   color: #333; }
+
 .text .text-light-grey {
   color: #566B78; }
+
 .text .text-white {
   color: #FFF; }
+
 .text .text-primary {
   color: #E95420; }
+
 .text .text-secondary {
   color: #7AD0ED; }
+
 .text .text-success {
   color: #2BD937; }
+
 .text .text-danger {
   color: #F01A1A; }
+
 .text .text-caution {
   color: #D9D92B; }
+
 .text .text-info {
   color: #6878ED; }
 
 .title .title-1 {
   font-size: 2.5rem; }
+
 .title .title-2 {
   font-size: 2rem; }
+
 .title .title-3 {
   font-size: 1.75rem; }
+
 .title .title-4 {
   font-size: 1.5rem; }
+
 .title .title-5 {
   font-size: 1.25rem; }
+
 .title .title-6 {
   font-size: 1rem; }
 
