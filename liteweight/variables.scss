@@ -10,53 +10,53 @@ $blue:	 			#7AD0ED;
 $indigo: 			#6878ED;
 $violet:	 		#A268ED;
 
-$black:				#000;
-$grey: 				#333;
-$light-grey:		#566B78;
-$dark-grey:			#4E4F51;
-$off-white: 		#F5f7F9;
-$white: 			#FFF;
+$black:				#000000;
+$grey: 				#333333;
+$light-grey:	#566B78;
+$dark-grey:		#4E4F51;
+$off-white: 	#F5f7F9;
+$white: 			#FFFFFF;
 
 // Colour correlation \\
 
-$primary: 			$orange;
-$secondary: 		$blue;
-$success: 			$green;
+$primary: 		$orange;
+$secondary: 	$blue;
+$success: 		$green;
 $danger:			$red;
 $caution:			$yellow;
 $info:				$indigo;
 
-$font-strong: 		$grey;
-$font-normal: 		$light-grey;
+$font-strong: 			$grey;
+$font-normal: 			$light-grey;
 $background-light: 	$off-white;
 
 $nav-background:	$background-light;
-$nav-text:			$font-normal;
-$nav-hover: 		#C8CACC;
-$nav-active:		$primary;
+$nav-text:				$font-normal;
+$nav-hover: 			#C8CACC;
+$nav-active:			$primary;
 
-$v-nav-text: 		$primary;
+$v-nav-text: 			$primary;
 
 // WARNING! Do not edit this list because it will change the class names and possibly cause errors. \\
 $colours: (
-	"red": 			$red,
+	"red": 				$red,
 	"orange": 		$orange,
 	"yellow": 		$yellow,
-	"green": 		$green,
-	"blue": 		$blue,
+	"green": 			$green,
+	"blue": 			$blue,
 	"indigo": 		$indigo,
 	"violet": 		$violet,
-	"black": 		$black,
-	"grey": 		$grey,
-	"light-grey": 	$light-grey,
-	"white": 		$white,
+	"black": 			$black,
+	"grey": 			$grey,
+	"light-grey": $light-grey,
+	"white": 			$white,
 
 	"primary":		$primary,
 	"secondary":	$secondary,
 	"success":		$success,
 	"danger": 		$danger,
 	"caution":		$caution,
-	"info":			$info,
+	"info":				$info,
 );
 
 // SASS variables \\
@@ -68,12 +68,12 @@ $spacer: 			1rem;
 
 // Secondary SASS variables \\
 
-$font-size-1: 		2.5rem;
-$font-size-2: 		2rem;
-$font-size-3: 		1.75rem;
-$font-size-4: 		1.5rem;
-$font-size-5: 		1.25rem;
-$font-size-6: 		1rem;
+$font-size-1: 			2.5rem;
+$font-size-2: 			2rem;
+$font-size-3: 			1.75rem;
+$font-size-4: 			1.5rem;
+$font-size-5: 			1.25rem;
+$font-size-6: 			1rem;
 $heading-margin-bottom: ($spacer / 2);
 
 $border-radius: 	3px;
