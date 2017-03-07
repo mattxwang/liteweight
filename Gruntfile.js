@@ -8,7 +8,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/liteweight.css': 'liteweight.scss'
+          'dist/liteweight.css': 'liteweight.scss',
+          'dist/theme/liteweight-nexa.css': 'liteweight-nexa.scss'
         }
       }
     },
@@ -22,6 +23,13 @@ module.exports = function(grunt) {
           cwd: 'dist/',
           src: ['*.css', '!*.min.css'],
           dest: 'dist/',
+          ext: '.min.css'
+        },
+        {
+          expand: true,
+          cwd: 'dist/theme/',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/theme/',
           ext: '.min.css'
         }]
       }

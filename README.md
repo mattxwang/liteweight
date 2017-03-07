@@ -29,3 +29,11 @@ $ grunt
 ```
 
 And now your code is nicely packaged in `dist/`! Awesome!
+
+## Notes
+
+There are a few undocumented things that we're still working on polishing. For reference, they are:
+* Themes
+* Dropdowns and navs
+* Text utilities (font-size)
+* Image manipulation

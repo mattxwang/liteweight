@@ -1,0 +1,191 @@
+/*
+    __    _ __                    _       __    __
+   / /   (_) /____ _      _____  (_)___ _/ /_  / /_
+  / /   / / __/ _ \ | /| / / _ \/ / __ `/ __ \/ __/
+ / /___/ / /_/  __/ |/ |/ /  __/ / /_/ / / / / /_
+/_____/_/\__/\___/|__/|__/\___/_/\__, /_/ /_/\__/
+                                /____/
+License MIT
+
+by Matthew Wang https://matthewwang.me
+   Nick O'Brien http://obrien.tech
+
+Liteweight Nexa Edition. Liteweight Nexa is a modified version of Liteweight Matt uses for his website, at https://matthewwang.me
+*/
+@font-face {
+  font-family: Nexa;
+  src: url(../fonts/nexa/nexa_light.otf); }
+
+@font-face {
+  font-family: Nexa;
+  font-weight: bold;
+  src: url(../fonts/nexa/nexa_bold.otf); }
+
+@font-face {
+  font-family: Nexa Slab;
+  src: url(../fonts/nexaslab/nexa_slab_regular.otf); }
+
+@font-face {
+  font-family: Nexa Slab;
+  font-weight: bold;
+  src: url(../fonts/nexaslab/nexa_slab_bold.otf); }
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px; }
+
+body {
+  margin: 0 auto;
+  max-width: 50rem;
+  font-family: "Nexa", "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 5rem 1rem;
+  color: #566B78; }
+
+.text .text-orange {
+  color: #E95420; }
+
+.text .text-blue {
+  color: #7AD0ED; }
+
+.text .text-black {
+  color: #000000; }
+
+.text .text-grey {
+  color: #333333; }
+
+.text .text-light-grey {
+  color: #566B78; }
+
+.text .text-white {
+  color: #FFFFFF; }
+
+.text .text-primary {
+  color: #E95420; }
+
+.text .text-secondary {
+  color: #7AD0ED; }
+
+.title .title-1 {
+  font-size: 2.5rem; }
+
+.title .title-2 {
+  font-size: 2rem; }
+
+.title .title-3 {
+  font-size: 1.75rem; }
+
+.title .title-4 {
+  font-size: 1.5rem; }
+
+.title .title-5 {
+  font-size: 1.25rem; }
+
+.title .title-6 {
+  font-size: 1rem; }
+
+.title-display, .title-1, .title-2, strong {
+  color: #333333; }
+
+.title {
+  margin-bottom: 0.5rem; }
+
+a {
+  color: #E95420;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.link-white {
+  color: #FFFFFF;
+  text-decoration: underline; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+/* Cards */
+.card {
+  display: block;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 3px; }
+
+.card-full {
+  background-color: #F5f7F9; }
+
+.card-bg-orange {
+  background-color: #E95420;
+  color: #FFFFFF; }
+
+.card-bg-blue {
+  background-color: #7AD0ED;
+  color: #FFFFFF; }
+
+.card-bg-black {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+.card-bg-grey {
+  background-color: #333333;
+  color: #FFFFFF; }
+
+.card-bg-light-grey {
+  background-color: #566B78;
+  color: #FFFFFF; }
+
+.card-bg-white {
+  background-color: #FFFFFF;
+  color: #FFFFFF; }
+
+.card-bg-primary {
+  background-color: #E95420;
+  color: #FFFFFF; }
+
+.card-bg-secondary {
+  background-color: #7AD0ED;
+  color: #FFFFFF; }
+
+.card-bordered-orange {
+  border: 1px solid #E95420; }
+
+.card-bordered-blue {
+  border: 1px solid #7AD0ED; }
+
+.card-bordered-black {
+  border: 1px solid #000000; }
+
+.card-bordered-grey {
+  border: 1px solid #333333; }
+
+.card-bordered-light-grey {
+  border: 1px solid #566B78; }
+
+.card-bordered-white {
+  border: 1px solid #FFFFFF; }
+
+.card-bordered-primary {
+  border: 1px solid #E95420; }
+
+.card-bordered-secondary {
+  border: 1px solid #7AD0ED; }
+
+.block-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+/*# sourceMappingURL=liteweight-nexa.css.map */
