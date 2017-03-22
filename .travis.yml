@@ -1,4 +1,8 @@
 language: node_js
+branches:
+  only:
+  - "gh-pages"
+  - /dev-(.*)/
 node_js:
   - "7"
   - "6"
