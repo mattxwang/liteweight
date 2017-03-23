@@ -10,10 +10,9 @@ node_js:
   - "4"
 
 before_script:
-  - npm install
   - npm install grunt-cli -g
 
 script:
-  - grunt
+  - npm run build
 
 sudo: false

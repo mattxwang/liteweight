@@ -6,6 +6,9 @@
   "repository": "malsf21/liteweight",
   "author": "Matthew Wang",
   "license": "MIT",
+  "scripts": {
+    "build": "grunt"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^2.0.0",

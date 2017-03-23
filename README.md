@@ -13,21 +13,23 @@ Here's a general idea of each of the important files:
 | `dist/` | The folder that contains final distribution files, in `.css` and `.min.css` format |
 | `lightweight.scss` | The SCSS file that compiles into `lightweight.css`.  |
 | `lightweight/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
+| `theme/*` | Themes that we've made for liteweight. |
 
 ## Development
 
 We use [Grunt](https://gruntjs.com) to help us develop things!
 
-First, we need to install our dependencies, using npm.
+First, we need to install our dependencies, using npm. We'll also need the `grunt-cli` tool to help us run our grunt tasks.
 
 ```bash
 $ npm install
+$ npm install grunt-cli -g
 ```
 
-Then, to compile `liteweight.scss` into some awesome, nicely minified code, run our default grunt task.
+Then, to compile `liteweight.scss` into some awesome, nicely minified code, run our `npm run build` command. This basically runs `grunt` (but might do more later).
 
 ```bash
-$ grunt
+$ npm run build
 ```
 
 And now your code is nicely packaged in `dist/`! Awesome!
