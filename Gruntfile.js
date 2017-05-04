@@ -9,7 +9,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'dist/liteweight.css': 'liteweight.scss',
-          'dist/theme/liteweight-nexa.css': 'liteweight-nexa.scss'
+          'dist/theme/liteweight-nexa.css': 'liteweight-nexa.scss',
+          'dist/theme/liteweight-omun.css': 'liteweight-omun.scss'
         }
       }
     },
