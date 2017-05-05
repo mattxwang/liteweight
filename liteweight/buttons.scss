@@ -27,7 +27,12 @@
 
     &:hover {
       background-color: $value;
-      color: $white;
+      @if $value == $white{
+        color: $black;
+      }
+      @else{
+        color: $white;
+      }
     }
   }
 }

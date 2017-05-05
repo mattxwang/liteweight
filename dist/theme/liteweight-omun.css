@@ -10,7 +10,7 @@ License MIT
 by Matthew Wang https://matthewwang.me
    Nick O'Brien http://obrien.tech
 
-Liteweight Nexa Edition. Liteweight Nexa is a modified version of Liteweight Matt uses for his website, at https://matthewwang.me
+Liteweight OMUN edition. Liteweight OMUN is used on the OMUN coming soon page. https://github.com/malsf21/omun.ca/tree/coming-soon
 */
 html {
   box-sizing: border-box;
@@ -164,7 +164,7 @@ a {
   color: #FFFFFF; }
   .button-liteweight-white:hover {
     background-color: #FFFFFF;
-    color: #FFFFFF; }
+    color: #000000; }
 
 .button-liteweight-primary {
   background: none;
@@ -180,7 +180,7 @@ a {
   color: #FFFFFF; }
   .button-liteweight-secondary:hover {
     background-color: #FFFFFF;
-    color: #FFFFFF; }
+    color: #000000; }
 
 .dropdown {
   position: relative;
