@@ -72,6 +72,18 @@ body {
 .text .text-secondary {
   color: #7AD0ED; }
 
+.text-2x {
+  font-size: 2em; }
+
+.text-3x {
+  font-size: 3em; }
+
+.text-4x {
+  font-size: 4em; }
+
+.text-5x {
+  font-size: 5em; }
+
 .title .title-1 {
   font-size: 2.5rem; }
 
@@ -186,6 +198,13 @@ a {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.block-balance {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
 
 .list-unstyled {
   padding: 0;

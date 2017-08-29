@@ -6,6 +6,12 @@
 	}
 }
 
+@each $key, $value in $text-sizes{
+	.text-#{$key} {
+		font-size: $value;
+	}
+}
+
 .title{
 	.title-1{ font-size: $font-size-1; }
 	.title-2{ font-size: $font-size-2; }

@@ -31,6 +31,8 @@
 		<p class="text">
 			An educational CSS framework by <a href="https://matthewwang.me/">Matthew Wang</a> and <a href="http://obrien.tech">Nick O'Brien</a>.
 		</p>
+		<a href="https://travis-ci.org/malsf21/liteweight"><img src="https://travis-ci.org/malsf21/liteweight.svg?branch=gh-pages" alt="Build Status"></a>
+		<a href="https://github.com/malsf21/liteweight/releases"><img src="https://img.shields.io/github/release/malsf21/liteweight.svg" alt="Build Status"></a>
 		<h2 class="title title-2">Colours</h2>
 		<p class="text">
 			An important thing to know about liteweight is that most of our elements rely on our colour map. Here's what the default is:
@@ -132,15 +134,42 @@ Bacon ipsum dolor amet spare ribs ham salami strip steak venison short loin porc
 		<a class="button button-liteweight-info" href="#">Info Button</a>
 		<pre class="pre-primary">
 			<code>
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Primary Button&lt;/<span class="sc">a</span>&gt;
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-secondary</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Secondary Button&lt;/<span class="sc">a</span>&gt;
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-success"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Success Button&lt;/<span class="sc">a</span>&gt;
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-danger"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Danger Button&lt;/<span class="sc">a</span>&gt;
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-caution"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Caution Button&lt;/<span class="sc">a</span>&gt;
-&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-info"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Info Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Primary Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-secondary</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Secondary Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-success"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Success Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-danger"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Danger Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-caution"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Caution Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-info"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Info Button&lt;/<span class="sc">a</span>&gt;
 			</code>
 		</pre>
-	</div>
+		<h2 class="title title-2">Dropdowns</h2>
+		<p class="text">Dropdowns are an extension of our buttons. Unlike most dropdown stylings, these ones are CSS only. In addition, they work with any of our colours in our colour map.</p>
+		<div class="dropdown">
+				<a class="button button-liteweight-primary">Mouse over me</a>
+				<div class="dropdown-content">
+					<ul class="list-unstyled">
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+					</ul>
+				</div>
+		</div>
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
+	&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
+	&lt;<span class="sc">div class=</span><span class="vc">"dropdown-content"</span>&gt;
+		&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+			&lt;/<span class="sc">ul</span>&gt;
+	 &lt;/<span class="sc">div</span>&gt;
+&lt;/<span class="sc">div</span>&gt;
+			</code>
+		</pre>
 		<h2 class="title title-2">Cards</h2>
 		<p class="text">
 			Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
@@ -225,9 +254,28 @@ Cool People
 			</code>
 		</pre>
 
+		<h3 class="title title-3">Text Sizes</h3>
+		<p class="text">
+			We added CSS classes that help you increase your relative font size.
+		</p>
+		<div class="card card-full">
+			<p class="text-2x">2x Text</p>
+			<p class="text-3x">3x Text</p>
+			<p class="text-4x">4x Text</p>
+			<p class="text-5x">5x Text</p>
+		</div>
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">p class=</span><span class="vc">"text-2x"</span>&gt;2x Text&lt;<span class="sc">/p</span>&gt;
+&lt;<span class="sc">p class=</span><span class="vc">"text-3x"</span>&gt;3x Text&lt;<span class="sc">/p</span>&gt;
+&lt;<span class="sc">p class=</span><span class="vc">"text-4x"</span>&gt;4x Text&lt;<span class="sc">/p</span>&gt;
+&lt;<span class="sc">p class=</span><span class="vc">"text-5x"</span>&gt;5x Text&lt;<span class="sc">/p</span>&gt;
+			</code>
+		</pre>
+
 		<h2 class="title title-2">Navbar</h2>
 		<p class="text">
-			Just in case you need to add navigation, here is a simple navbar. (As of now there are no breakpoints, Will be updated soon)
+			Here are some navbar-esque components. While they aren't responsive in the traditional sense (no hamburger menu), they are compact enough to work on most screen sizes.
 		</p>
 		<nav class="nav">
 			<ul class="nav-list">
@@ -238,14 +286,16 @@ Cool People
 			</ul>
 		</nav>
 		<pre class="pre-primary">
-	&lt;<span class="sc">nav class=</span><span class="vc">"nav"</span>&gt;
-	    &lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
-		    &lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	        &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	    &lt;/<span class="sc">ul</span>&gt;
-	&lt;/<span class="sc">nav</span>&gt;
+			<code>
+&lt;<span class="sc">nav class=</span><span class="vc">"nav"</span>&gt;
+    &lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
+	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+        &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+    &lt;/<span class="sc">ul</span>&gt;
+&lt;/<span class="sc">nav</span>&gt;
+			</code>
 		</pre>
 		<ul class="v-nav">
 			<li class="v-nav-item"><a>Vertical navbar item</a></li>
@@ -254,51 +304,31 @@ Cool People
 			<li class="v-nav-item"><a>Vertical navbar item</a></li>
 		</ul>
 		<pre class="pre-primary">
-	&lt;<span class="sc">ul class=</span><span class="vc">"v-nav"</span>&gt;
-		&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	&lt;/<span class="sc">ul</span>&gt;
+			<code>
+&lt;<span class="sc">ul class=</span><span class="vc">"v-nav"</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+&lt;/<span class="sc">ul</span>&gt;
+			</code>
 		</pre>
-		<div class="card card-full">
-			<h2 class="title title-2">Image</h2>
-			<p class="text">Just a handy-dandy responsive image class</p>
+		<h2 class="title title-2">Images</h2>
+		<p class="text"><code>block-responsive</code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
+		<img class="block-responsive" src="logo.png" alt="Really Cool Logo" />
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
+			</code>
+	 	</pre>
 
-			<img class="block-responsive" src="https://malsf21.github.io/liteweight/img/dmcs.png" alt="Really Cool Logo" />
-			<pre class="pre-primary">
-	&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
-	 </pre>
-		</div>
-		<div class="card card-full">
-			<h1 class="title title-1">Dropdowns and buttons</h1>
-			<h2 class="title title-2">Dropdowns</h2>
-			<p class="text">Available in all colours and works with most classes</p>
-			<div class="dropdown">
-		  		<a class="button button-liteweight-primary">Mouse over me</a>
-		  		<div class="dropdown-content">
-		    		<ul class="list-unstyled">
-		    			<li><a>Dropdown link</a></li>
-		    			<li><a>Dropdown link</a></li>
-		    			<li><a>Dropdown link</a></li>
-		    			<li><a>Dropdown link</a></li>
-		    		</ul>
-		  		</div>
-			</div>
-			<pre class="pre-primary">
-	&lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
-		&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
-		&lt;<span class="sc">div class=</span><span class="vc">"dropdown-content"</span>&gt;
-			&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
-		    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    	&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-		    &lt;/<span class="sc">ul</span>&gt;
-		 &lt;/<span class="sc">div</span>&gt;
-	&lt;/<span class="sc">div</span>&gt;
-			</pre>
-		</div>
+		<p class="text"><code>block-balance</code> does something similar, except it also sets <code>margin-left</code> and <code>margin-right</code> to <code>auto</code></p>
+		<img class="block-balance" src="logo.png" alt="Really Cool Logo" />
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
+			</code>
+	 	</pre>
 
 		<footer class="text-center">
 			<a href="https://github.com/malsf21/liteweight"><span class="fa fa-github fa-5x"></span></a>
