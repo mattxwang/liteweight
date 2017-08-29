@@ -37,12 +37,16 @@ html {
   font-size: 16px; }
 
 body {
-  margin: 0 auto;
-  max-width: 50rem;
+  margin: 0;
+  padding: 0;
   font-family: "Nexa", "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 5rem 1rem;
   color: #566B78; }
+
+.main-body {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 5rem 1rem; }
 
 .text .text-orange {
   color: #E95420; }
@@ -122,6 +126,10 @@ a {
 .card-full {
   background-color: #F5f7F9; }
 
+.card a {
+  color: #FFFFFF;
+  text-decoration: underline; }
+
 .card-bg-orange {
   background-color: #E95420;
   color: #FFFFFF; }
@@ -187,5 +195,11 @@ a {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+.header-image {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=liteweight-nexa.css.map */

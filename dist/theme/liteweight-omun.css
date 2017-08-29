@@ -93,7 +93,8 @@ a {
   background-color: #F5f7F9;
   padding: 0.5rem 1rem 0.5rem 1rem;
   text-decoration: none;
-  border-radius: 3px; }
+  border-radius: 3px;
+  line-height: 3; }
 
 .button:hover {
   text-decoration: none; }
@@ -187,10 +188,10 @@ a {
   display: inline-block; }
 
 .dropdown-content {
-  padding-top: 1em;
+  padding-top: 2em;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #F5f7F9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;

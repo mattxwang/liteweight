@@ -12,6 +12,11 @@
   background-color: $background-light;
 }
 
+.card a{
+  color: $white;
+  text-decoration: underline;
+}
+
 @each $key, $value in $colours {
   .card-bg-#{$key} {
     background-color: $value;

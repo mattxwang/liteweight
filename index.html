@@ -10,10 +10,35 @@
 	  <meta name="description" content="" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
-	<body>
+	<body class="main-body">
 		<h1 class="title title-1">Liteweight</h1>
 		<p class="text">
 			An educational CSS framework by <a href="https://matthewwang.me/">Matthew Wang</a> and <a href="http://obrien.tech">Nick O'Brien</a>.
+		</p>
+		<h2 class="title title-2">Colours</h2>
+		<p class="text">
+			An important thing to know about liteweight is that most of our elements rely on our colour map. Here's what the default is:
+		</p>
+		<div class="card card-bg-primary">
+			<h3 class="title title-3">Primary (#E95420)</h3>
+		</div>
+		<div class="card card-bg-secondary">
+			<h3 class="title title-3">Secondary (#7AD0ED)</h3>
+		</div>
+		<div class="card card-bg-success">
+			<h3 class="title title-3">Success (#2BD937)</h3>
+		</div>
+		<div class="card card-bg-danger">
+			<h3 class="title title-3">Danger (#F01A1A)</h3>
+		</div>
+		<div class="card card-bg-caution">
+			<h3 class="title title-3">Caution (#D9D92B)</h3>
+		</div>
+		<div class="card card-bg-info">
+			<h3 class="title title-3">Info Colour (#6878ED)</h3>
+		</div>
+		<p class="text">
+			These colours can be edited in <code>liteweight/variables.scss</code>; they are often edited by themes.
 		</p>
 		<h2 class="title title-2">Typography</h2>
 		<p class="text">
@@ -76,6 +101,30 @@ Bacon ipsum dolor amet spare ribs ham salami strip steak venison short loin porc
 &lt;<span class="sc">a href=</span><span class="vc">"#"</span>Link&gt;&lt;<span class="sc">/a</span>&gt;
 			</code>
 		</pre>
+		<h2 class="title title-2">Buttons</h2>
+		<p>We added outlined buttons to liteweight, in all colours available in our colour map.</p>
+		<a class="button button-liteweight-primary" href="#">Primary Button</a>
+		</br>
+		<a class="button button-liteweight-secondary" href="#">Secondary Button</a>
+		</br>
+		<a class="button button-liteweight-success" href="#">Success Button</a>
+		</br>
+		<a class="button button-liteweight-danger" href="#">Danger Button</a>
+		</br>
+		<a class="button button-liteweight-caution" href="#">Caution Button</a>
+		</br>
+		<a class="button button-liteweight-info" href="#">Info Button</a>
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Primary Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-secondary</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Secondary Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-success"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Success Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-danger"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Danger Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-caution"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Caution Button&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-info"</span><span class="sc">href=</span><span class="vc">"#"</span>&gt;Info Button&lt;/<span class="sc">a</span>&gt;
+			</code>
+		</pre>
+	</div>
 		<h2 class="title title-2">Cards</h2>
 		<p class="text">
 			Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
@@ -159,7 +208,7 @@ Cool People
 &lt;<span class="sc">p class=</span><span class="vc">"text-right"</span>&gt;Right-aligned text&lt;<span class="sc">/p</span>&gt;
 			</code>
 		</pre>
-		
+
 		<h2 class="title title-2">Navbar</h2>
 		<p class="text">
 			Just in case you need to add navigation, here is a simple navbar. (As of now there are no breakpoints, Will be updated soon)
@@ -233,17 +282,6 @@ Cool People
 		 &lt;/<span class="sc">div</span>&gt;
 	&lt;/<span class="sc">div</span>&gt;
 			</pre>
-			<h2 class="title title-2">Buttons</h2>
-			<p>Also available in all colours</p>
-			<pre class="pre-primary">
-	&lt;<span class="sc">a class=</span><span class="vc">"button button-liteweight-primary"</span>&gt;Button&lt;/<span class="sc">a</span>&gt;
-			</pre>
-			<a class="button button-liteweight-primary">Button</a>
-			<a class="button button-liteweight-secondary">Button</a>
-			<a class="button button-liteweight-success">Button</a>
-			<a class="button button-liteweight-danger">Button</a>
-			<a class="button button-liteweight-caution">Button</a>
-			<a class="button button-liteweight-info">Button</a>
 		</div>
 
 		<footer class="text-center">
