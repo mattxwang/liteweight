@@ -1,6 +1,7 @@
 # liteweight
 
 [![Build Status](https://travis-ci.org/malsf21/liteweight.svg?branch=gh-pages)](https://travis-ci.org/malsf21/liteweight)
+[![GitHub Release](https://img.shields.io/github/release/malsf21/liteweight.svg)](https://github.com/malsf21/liteweight/releases)
 
 liteweight is a really small CSS framework I made to help teach basic HTML, CSS, and maybe some SASS. It promotes clean, responsive design, but also is in no means perfect. It's just here to be small and educational. If you've got any pointers or bug fixes, PR's and forks are fully welcome.
 
