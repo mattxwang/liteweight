@@ -31,7 +31,7 @@
 			<h5 class="title title-5">Heading 5</h5>
 			<h6 class="title title-6">Heading 6</h6>
 		</div>
-		<pre>
+		<pre class="pre-primary">
 			<code>
 &lt;<span class="sc">h1 class=</span><span class="vc">"title title-1"</span>&gt;Heading 1&lt;<span class="sc">/h1</span>&gt;
 &lt;<span class="sc">h2 class=</span><span class="vc">"title title-2"</span>&gt;Heading 2&lt;<span class="sc">/h2</span>&gt;
@@ -39,8 +39,8 @@
 &lt;<span class="sc">h4 class=</span><span class="vc">"title title-4"</span>&gt;Heading 4&lt;<span class="sc">/h4</span>&gt;
 &lt;<span class="sc">h5 class=</span><span class="vc">"title title-5"</span>&gt;Heading 5&lt;<span class="sc">/h5</span>&gt;
 &lt;<span class="sc">h6 class=</span><span class="vc">"title title-6"</span>&gt;Heading 6&lt;<span class="sc">/h6</span>&gt;
-		</code>
-	</pre>
+			</code>
+		</pre>
 		<h3 class="title title-3">Text</h3>
 		<p class="text">
 			Liteweight also doesn't directly modify <code>&lt;<span class="sc">p</span>&gt;</code>; instead, it uses the <code><span class="vc">class="text"</span></code> to style elements. You can use it on a variety of elements.
@@ -50,7 +50,7 @@
 				Bacon ipsum dolor amet spare ribs ham salami strip steak venison short loin porchetta brisket chuck shankle pancetta. Meatball tri-tip short loin, shank turkey venison frankfurter leberkas pork loin ribeye porchetta kielbasa pig. Andouille strip steak doner jowl frankfurter shank sirloin hamburger. Turducken jowl fatback, prosciutto andouille salami bacon swine ham hock pork chop drumstick tenderloin cupim t-bone sirloin.
 			</p>
 		</div>
-		<pre>
+		<pre class="pre-primary">
 			<code>
 &lt;<span class="sc">p class=</span><span class="vc">"text"</span>&gt;
 Bacon ipsum dolor amet spare ribs ham salami strip steak venison short loin porchetta brisket chuck shankle pancetta. Meatball tri-tip short loin, shank turkey venison frankfurter leberkas pork loin ribeye porchetta kielbasa pig. Andouille strip steak doner jowl frankfurter shank sirloin hamburger. Turducken jowl fatback, prosciutto andouille salami bacon swine ham hock pork chop drumstick tenderloin cupim t-bone sirloin.
@@ -71,48 +71,95 @@ Bacon ipsum dolor amet spare ribs ham salami strip steak venison short loin porc
 				<a href="#">Link</a>
 			</p>
 		</div>
-		<pre>
+		<pre class="pre-primary">
 			<code>
 &lt;<span class="sc">a href=</span><span class="vc">"#"</span>Link&gt;&lt;<span class="sc">/a</span>&gt;
 			</code>
 		</pre>
-	<h2 class="title title-2">Cards</h2>
-	<p class="text">
-		Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
-	</p>
-	<div class="card">Card</div>
+		<h2 class="title title-2">Cards</h2>
+		<p class="text">
+			Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
+		</p>
+		<div class="card">
+			This is a card (with just padding).
+		</div>
 		<pre class="pre-primary">
-	<span class="sc">div class=</span><span class="vc">"card"</span>
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"card"</span>&gt;
+	This is a card (with just padding).
+&lt;<span class="sc">/div</span>&gt;
+			</code>
 		</pre>
-		<div class="card card-full">Card Full</div>
+		<div class="card card-full">
+			This is a default card (with a background).
+		</div>
 		<pre class="pre-primary">
-	<span class="sc">div class=</span><span class="vc">"card card-full"</span> &rarr; card-full adds a light-grey background. You can customize this is liteweight/variables.scss with <span class="sc">$background-light</span>
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"card card-full"</span>&gt;
+	This is a default card (with a background).
+&lt;<span class="sc">/div</span>&gt;
+			</code>
 		</pre>
-		<div class="card card-bg-primary">Card background (primary)</div>
+		<div class="card card-bg-primary">
+			This is a card with the "primary" background. You can use any colour in our colour array for card backgrounds.
+		</div>
 		<pre class="pre-primary">
-	<span class="sc">div class=</span><span class="vc">"card card-bg-*"</span> &rarr; <span class="sc">*</span> referring to the colours in <span class="sc">$colours</span>
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"card card-bg-primary"</span>&gt;
+	This is a card with the "primary" background. You can use any colour in our colour array for card backgrounds.
+&lt;<span class="sc">/div</span>&gt;
+			</code>
 		</pre>
-		<div class="card card-bordered-primary">Card Bordered (primary)</div>
-		<pre class="pre-primary">
-	<span class="sc">div class=</span><span class="vc">"card card-bordered-*"</span> &rarr; <span class="sc">*</span> referring to the colours in <span class="sc">$colours</span>
-		</pre>
-
 		<div class="card card-bordered-primary">
-			<h2 class="title title-2">Text</h2>
-			<h3 class="title title-3">Lists</h3>
+			This is a card with the "primary" border. You can use any colour in our colour array for card borders.
+		</div>
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"card card-border-primary"</span>&gt;
+	This is a card with the "primary" border. You can use any colour in our colour array for card borders.
+&lt;<span class="sc">/div</span>&gt;
+			</code>
+		</pre>
+		<h2 class="title title-2">Text Utilities</h2>
+		<h3 class="title title-3">Lists</h3>
+		<p class="text">
+			We added a simple utility that just makes an unstyled list.
+		</p>
+		<div class="card card-full">
+			Cool People
 			<ul class="list-unstyled">
-				<li>This</li>
-				<li>list</li>
-				<li>is</li>
-				<li>unstyled</li>
-				<li><code><span class="sc">ul class=</span><span class="vc">"list-unstyled"</span></code></li>
+				<li>Matt (@malsf21)</li>
+				<li>Nick (@obrien66)</li>
+				...
 			</ul>
 		</div>
-		<h2 class="title title-2">Left, Right, and Center Text</h2>
-		The following classes can be used with <code><span class="sc">div</span></code> to modify their position.
-		<div class="text-left"><pre class="pre-primary">text-left</pre></div>
-		<div class="text-center"><pre class="pre-primary">text-center</pre></div>
-		<div class="text-right"><pre class="pre-primary">text-right</pre></div>
+		<pre class="pre-primary">
+			<code>
+Cool People
+&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
+	&lt;<span class="sc">li</span>&gt;Matt (@malsf21)&lt;<span class="sc">/li</span>&gt;
+	&lt;<span class="sc">li</span>&gt;Nick (@obrien66)&lt;<span class="sc">/li</span>&gt;
+	...
+&lt;<span class="sc">/ul</span>&gt;
+			</code>
+		</pre>
+		<h3 class="title title-3">Text Positioning</h3>
+		<p class="text">
+			We added CSS classes that change <code>text-align</code> to left, center, and right.
+		</p>
+		<div class="card card-full">
+			<p class="text-left">Left-aligned text</p>
+			<p class="text-center">Center-aligned text</p>
+			<p class="text-right">Right-aligned text</p>
+		</div>
+		<pre class="pre-primary">
+			<code>
+&lt;<span class="sc">p class=</span><span class="vc">"text-left"</span>&gt;Left-aligned text&lt;<span class="sc">/p</span>&gt;
+&lt;<span class="sc">p class=</span><span class="vc">"text-center"</span>&gt;Center-aligned text&lt;<span class="sc">/p</span>&gt;
+&lt;<span class="sc">p class=</span><span class="vc">"text-right"</span>&gt;Right-aligned text&lt;<span class="sc">/p</span>&gt;
+			</code>
+		</pre>
+		
 		<h2 class="title title-2">Navbar</h2>
 		<p class="text">
 			Just in case you need to add navigation, here is a simple navbar. (As of now there are no breakpoints, Will be updated soon)
