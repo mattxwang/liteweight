@@ -26,8 +26,30 @@ body {
 
 .main-body {
   margin: 0 auto;
-  max-width: 50rem;
-  padding: 5rem 1rem; }
+  max-width: 50rem; }
+  @media (min-width: 800px) {
+    .main-body {
+      padding: 5rem 1rem; } }
+  @media (max-width: 800px) {
+    .main-body {
+      padding: 2rem 1rem; } }
+
+.block-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.block-balance {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
 
 .text .text-red {
   color: #F01A1A; }
@@ -653,23 +675,6 @@ nav {
 .v-nav-item:hover {
   background-color: #C8CACC;
   color: white; }
-
-.block-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-.block-balance {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto; }
-
-.list-unstyled {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
 
 .header-image {
   max-width: 50%;
