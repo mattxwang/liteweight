@@ -1,0 +1,42 @@
+/* Tags */
+
+.tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.4rem 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  border-radius: $border-radius;
+}
+
+.tag-full{
+  background-color: $background-light;
+}
+
+.tag-rounded{
+  border-radius: 500px;
+}
+
+.tag-sm{
+  font-size: 0.6rem;
+  padding: 0.2rem 0.75rem;
+  margin-top: 0px;
+}
+
+.tag-lg{
+  font-size: 1.2rem;
+  padding: 0.6rem 1.5rem;
+}
+
+@each $key, $value in $colours {
+  .tag-#{$key} {
+    background-color: $value;
+    color: $white;
+  }
+  .tag-bordered-#{$key} {
+    border: 1px solid $value;
+    color: $value;
+    font-weight: normal;
+  }
+}
