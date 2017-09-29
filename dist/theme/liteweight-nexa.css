@@ -70,28 +70,28 @@ body {
   margin: 0;
   list-style: none; }
 
-.text .text-orange {
+.text-orange {
   color: #E95420; }
 
-.text .text-blue {
+.text-blue {
   color: #7AD0ED; }
 
-.text .text-black {
+.text-black {
   color: #000000; }
 
-.text .text-grey {
+.text-grey {
   color: #333333; }
 
-.text .text-light-grey {
+.text-light-grey {
   color: #566B78; }
 
-.text .text-white {
+.text-white {
   color: #FFFFFF; }
 
-.text .text-primary {
+.text-primary {
   color: #E95420; }
 
-.text .text-secondary {
+.text-secondary {
   color: #7AD0ED; }
 
 .text-2x {
@@ -148,6 +148,9 @@ a {
 
 .text-right {
   text-align: right; }
+
+.text-muted {
+  color: #566B78; }
 
 /* Cards */
 .card {

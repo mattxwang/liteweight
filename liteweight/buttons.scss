@@ -1,16 +1,22 @@
 /* Buttons */
 
 .button{
+  display: inline-block;
   color: $white;
   background-color: $background-light;
-  padding: ($spacer / 2) $spacer ($spacer / 2) $spacer;
+  margin: ($spacer / 2) ($spacer / 2);
+  padding: ($spacer / 8) $spacer;
   text-decoration: none;
   border-radius: $border-radius;
-  line-height: 3;
+  line-height: 2;
 }
 
 .button:hover {
   text-decoration: none;
+}
+
+.button-block{
+  display: block;
 }
 
 @each $key, $value in $colours {
@@ -21,7 +27,7 @@
 }
 
 @each $key, $value in $colours {
-  .button-liteweight-#{$key} {
+  .button-#{$key} {
     background: none;
     border: 1px solid $value;
     color: $value;

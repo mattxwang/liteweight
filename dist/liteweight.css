@@ -51,55 +51,55 @@ body {
   margin: 0;
   list-style: none; }
 
-.text .text-red {
+.text-red {
   color: #F01A1A; }
 
-.text .text-orange {
+.text-orange {
   color: #E95420; }
 
-.text .text-yellow {
+.text-yellow {
   color: #D9D92B; }
 
-.text .text-green {
+.text-green {
   color: #2BD937; }
 
-.text .text-blue {
+.text-blue {
   color: #7AD0ED; }
 
-.text .text-indigo {
+.text-indigo {
   color: #6878ED; }
 
-.text .text-violet {
+.text-violet {
   color: #A268ED; }
 
-.text .text-black {
+.text-black {
   color: #000000; }
 
-.text .text-grey {
+.text-grey {
   color: #333333; }
 
-.text .text-light-grey {
+.text-light-grey {
   color: #566B78; }
 
-.text .text-white {
+.text-white {
   color: #FFFFFF; }
 
-.text .text-primary {
+.text-primary {
   color: #E95420; }
 
-.text .text-secondary {
+.text-secondary {
   color: #7AD0ED; }
 
-.text .text-success {
+.text-success {
   color: #2BD937; }
 
-.text .text-danger {
+.text-danger {
   color: #F01A1A; }
 
-.text .text-caution {
+.text-caution {
   color: #D9D92B; }
 
-.text .text-info {
+.text-info {
   color: #6878ED; }
 
 .text-2x {
@@ -157,17 +157,25 @@ a {
 .text-right {
   text-align: right; }
 
+.text-muted {
+  color: #566B78; }
+
 /* Buttons */
 .button {
+  display: inline-block;
   color: #FFFFFF;
   background-color: #F5f7F9;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  padding: 0.125rem 1rem;
   text-decoration: none;
   border-radius: 3px;
-  line-height: 3; }
+  line-height: 2; }
 
 .button:hover {
   text-decoration: none; }
+
+.button-block {
+  display: block; }
 
 .button-red {
   background-color: #F01A1A;
@@ -237,139 +245,139 @@ a {
   background-color: #6878ED;
   color: #FFFFFF; }
 
-.button-liteweight-red {
+.button-red {
   background: none;
   border: 1px solid #F01A1A;
   color: #F01A1A; }
-  .button-liteweight-red:hover {
+  .button-red:hover {
     background-color: #F01A1A;
     color: #FFFFFF; }
 
-.button-liteweight-orange {
+.button-orange {
   background: none;
   border: 1px solid #E95420;
   color: #E95420; }
-  .button-liteweight-orange:hover {
+  .button-orange:hover {
     background-color: #E95420;
     color: #FFFFFF; }
 
-.button-liteweight-yellow {
+.button-yellow {
   background: none;
   border: 1px solid #D9D92B;
   color: #D9D92B; }
-  .button-liteweight-yellow:hover {
+  .button-yellow:hover {
     background-color: #D9D92B;
     color: #FFFFFF; }
 
-.button-liteweight-green {
+.button-green {
   background: none;
   border: 1px solid #2BD937;
   color: #2BD937; }
-  .button-liteweight-green:hover {
+  .button-green:hover {
     background-color: #2BD937;
     color: #FFFFFF; }
 
-.button-liteweight-blue {
+.button-blue {
   background: none;
   border: 1px solid #7AD0ED;
   color: #7AD0ED; }
-  .button-liteweight-blue:hover {
+  .button-blue:hover {
     background-color: #7AD0ED;
     color: #FFFFFF; }
 
-.button-liteweight-indigo {
+.button-indigo {
   background: none;
   border: 1px solid #6878ED;
   color: #6878ED; }
-  .button-liteweight-indigo:hover {
+  .button-indigo:hover {
     background-color: #6878ED;
     color: #FFFFFF; }
 
-.button-liteweight-violet {
+.button-violet {
   background: none;
   border: 1px solid #A268ED;
   color: #A268ED; }
-  .button-liteweight-violet:hover {
+  .button-violet:hover {
     background-color: #A268ED;
     color: #FFFFFF; }
 
-.button-liteweight-black {
+.button-black {
   background: none;
   border: 1px solid #000000;
   color: #000000; }
-  .button-liteweight-black:hover {
+  .button-black:hover {
     background-color: #000000;
     color: #FFFFFF; }
 
-.button-liteweight-grey {
+.button-grey {
   background: none;
   border: 1px solid #333333;
   color: #333333; }
-  .button-liteweight-grey:hover {
+  .button-grey:hover {
     background-color: #333333;
     color: #FFFFFF; }
 
-.button-liteweight-light-grey {
+.button-light-grey {
   background: none;
   border: 1px solid #566B78;
   color: #566B78; }
-  .button-liteweight-light-grey:hover {
+  .button-light-grey:hover {
     background-color: #566B78;
     color: #FFFFFF; }
 
-.button-liteweight-white {
+.button-white {
   background: none;
   border: 1px solid #FFFFFF;
   color: #FFFFFF; }
-  .button-liteweight-white:hover {
+  .button-white:hover {
     background-color: #FFFFFF;
     color: #000000; }
 
-.button-liteweight-primary {
+.button-primary {
   background: none;
   border: 1px solid #E95420;
   color: #E95420; }
-  .button-liteweight-primary:hover {
+  .button-primary:hover {
     background-color: #E95420;
     color: #FFFFFF; }
 
-.button-liteweight-secondary {
+.button-secondary {
   background: none;
   border: 1px solid #7AD0ED;
   color: #7AD0ED; }
-  .button-liteweight-secondary:hover {
+  .button-secondary:hover {
     background-color: #7AD0ED;
     color: #FFFFFF; }
 
-.button-liteweight-success {
+.button-success {
   background: none;
   border: 1px solid #2BD937;
   color: #2BD937; }
-  .button-liteweight-success:hover {
+  .button-success:hover {
     background-color: #2BD937;
     color: #FFFFFF; }
 
-.button-liteweight-danger {
+.button-danger {
   background: none;
   border: 1px solid #F01A1A;
   color: #F01A1A; }
-  .button-liteweight-danger:hover {
+  .button-danger:hover {
     background-color: #F01A1A;
     color: #FFFFFF; }
 
-.button-liteweight-caution {
+.button-caution {
   background: none;
   border: 1px solid #D9D92B;
   color: #D9D92B; }
-  .button-liteweight-caution:hover {
+  .button-caution:hover {
     background-color: #D9D92B;
     color: #FFFFFF; }
 
-.button-liteweight-info {
+.button-info {
   background: none;
   border: 1px solid #6878ED;
   color: #6878ED; }
-  .button-liteweight-info:hover {
+  .button-info:hover {
     background-color: #6878ED;
     color: #FFFFFF; }
 
@@ -853,11 +861,5 @@ nav {
 .v-nav-item:hover {
   background-color: #C8CACC;
   color: white; }
-
-.header-image {
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%; }
 
 /*# sourceMappingURL=liteweight.css.map */

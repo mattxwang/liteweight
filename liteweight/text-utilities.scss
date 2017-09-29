@@ -1,8 +1,7 @@
-.text {
-	@each $key, $value in $colours{
-		.text-#{$key} {
-			color: $value;
-		}
+
+@each $key, $value in $colours{
+	.text-#{$key} {
+		color: $value;
 	}
 }
 
@@ -54,4 +53,8 @@ a {
 
 .text-right{
   text-align: right;
+}
+
+.text-muted{
+	color: $light-grey;
 }
