@@ -23,21 +23,6 @@ body {
   line-height: 1.5;
   color: #F5f7F9; }
 
-.text-blue {
-  color: #2196F3; }
-
-.text-black {
-  color: #000000; }
-
-.text-grey {
-  color: #333333; }
-
-.text-light-grey {
-  color: #566B78; }
-
-.text-white {
-  color: #FFFFFF; }
-
 .text-primary {
   color: #2196F3; }
 
@@ -119,26 +104,6 @@ a {
 .button-block {
   display: block; }
 
-.button-blue {
-  background-color: #2196F3;
-  color: #FFFFFF; }
-
-.button-black {
-  background-color: #000000;
-  color: #FFFFFF; }
-
-.button-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
-
-.button-light-grey {
-  background-color: #566B78;
-  color: #FFFFFF; }
-
-.button-white {
-  background-color: #FFFFFF;
-  color: #FFFFFF; }
-
 .button-primary {
   background-color: #2196F3;
   color: #FFFFFF; }
@@ -146,46 +111,6 @@ a {
 .button-secondary {
   background-color: #FFFFFF;
   color: #FFFFFF; }
-
-.button-blue {
-  background: none;
-  border: 1px solid #2196F3;
-  color: #2196F3; }
-  .button-blue:hover {
-    background-color: #2196F3;
-    color: #FFFFFF; }
-
-.button-black {
-  background: none;
-  border: 1px solid #000000;
-  color: #000000; }
-  .button-black:hover {
-    background-color: #000000;
-    color: #FFFFFF; }
-
-.button-grey {
-  background: none;
-  border: 1px solid #333333;
-  color: #333333; }
-  .button-grey:hover {
-    background-color: #333333;
-    color: #FFFFFF; }
-
-.button-light-grey {
-  background: none;
-  border: 1px solid #566B78;
-  color: #566B78; }
-  .button-light-grey:hover {
-    background-color: #566B78;
-    color: #FFFFFF; }
-
-.button-white {
-  background: none;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF; }
-  .button-white:hover {
-    background-color: #FFFFFF;
-    color: #000000; }
 
 .button-primary {
   background: none;

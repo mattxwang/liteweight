@@ -51,39 +51,6 @@ body {
   margin: 0;
   list-style: none; }
 
-.text-red {
-  color: #F01A1A; }
-
-.text-orange {
-  color: #E95420; }
-
-.text-yellow {
-  color: #D9D92B; }
-
-.text-green {
-  color: #2BD937; }
-
-.text-blue {
-  color: #7AD0ED; }
-
-.text-indigo {
-  color: #6878ED; }
-
-.text-violet {
-  color: #A268ED; }
-
-.text-black {
-  color: #000000; }
-
-.text-grey {
-  color: #333333; }
-
-.text-light-grey {
-  color: #566B78; }
-
-.text-white {
-  color: #FFFFFF; }
-
 .text-primary {
   color: #E95420; }
 
@@ -177,50 +144,6 @@ a {
 .button-block {
   display: block; }
 
-.button-red {
-  background-color: #F01A1A;
-  color: #FFFFFF; }
-
-.button-orange {
-  background-color: #E95420;
-  color: #FFFFFF; }
-
-.button-yellow {
-  background-color: #D9D92B;
-  color: #FFFFFF; }
-
-.button-green {
-  background-color: #2BD937;
-  color: #FFFFFF; }
-
-.button-blue {
-  background-color: #7AD0ED;
-  color: #FFFFFF; }
-
-.button-indigo {
-  background-color: #6878ED;
-  color: #FFFFFF; }
-
-.button-violet {
-  background-color: #A268ED;
-  color: #FFFFFF; }
-
-.button-black {
-  background-color: #000000;
-  color: #FFFFFF; }
-
-.button-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
-
-.button-light-grey {
-  background-color: #566B78;
-  color: #FFFFFF; }
-
-.button-white {
-  background-color: #FFFFFF;
-  color: #FFFFFF; }
-
 .button-primary {
   background-color: #E95420;
   color: #FFFFFF; }
@@ -244,94 +167,6 @@ a {
 .button-info {
   background-color: #6878ED;
   color: #FFFFFF; }
-
-.button-red {
-  background: none;
-  border: 1px solid #F01A1A;
-  color: #F01A1A; }
-  .button-red:hover {
-    background-color: #F01A1A;
-    color: #FFFFFF; }
-
-.button-orange {
-  background: none;
-  border: 1px solid #E95420;
-  color: #E95420; }
-  .button-orange:hover {
-    background-color: #E95420;
-    color: #FFFFFF; }
-
-.button-yellow {
-  background: none;
-  border: 1px solid #D9D92B;
-  color: #D9D92B; }
-  .button-yellow:hover {
-    background-color: #D9D92B;
-    color: #FFFFFF; }
-
-.button-green {
-  background: none;
-  border: 1px solid #2BD937;
-  color: #2BD937; }
-  .button-green:hover {
-    background-color: #2BD937;
-    color: #FFFFFF; }
-
-.button-blue {
-  background: none;
-  border: 1px solid #7AD0ED;
-  color: #7AD0ED; }
-  .button-blue:hover {
-    background-color: #7AD0ED;
-    color: #FFFFFF; }
-
-.button-indigo {
-  background: none;
-  border: 1px solid #6878ED;
-  color: #6878ED; }
-  .button-indigo:hover {
-    background-color: #6878ED;
-    color: #FFFFFF; }
-
-.button-violet {
-  background: none;
-  border: 1px solid #A268ED;
-  color: #A268ED; }
-  .button-violet:hover {
-    background-color: #A268ED;
-    color: #FFFFFF; }
-
-.button-black {
-  background: none;
-  border: 1px solid #000000;
-  color: #000000; }
-  .button-black:hover {
-    background-color: #000000;
-    color: #FFFFFF; }
-
-.button-grey {
-  background: none;
-  border: 1px solid #333333;
-  color: #333333; }
-  .button-grey:hover {
-    background-color: #333333;
-    color: #FFFFFF; }
-
-.button-light-grey {
-  background: none;
-  border: 1px solid #566B78;
-  color: #566B78; }
-  .button-light-grey:hover {
-    background-color: #566B78;
-    color: #FFFFFF; }
-
-.button-white {
-  background: none;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF; }
-  .button-white:hover {
-    background-color: #FFFFFF;
-    color: #000000; }
 
 .button-primary {
   background: none;
@@ -409,50 +244,6 @@ a {
 .card-full {
   background-color: #F5f7F9; }
 
-.card-bg-red {
-  background-color: #F01A1A;
-  color: #FFFFFF; }
-
-.card-bg-orange {
-  background-color: #E95420;
-  color: #FFFFFF; }
-
-.card-bg-yellow {
-  background-color: #D9D92B;
-  color: #FFFFFF; }
-
-.card-bg-green {
-  background-color: #2BD937;
-  color: #FFFFFF; }
-
-.card-bg-blue {
-  background-color: #7AD0ED;
-  color: #FFFFFF; }
-
-.card-bg-indigo {
-  background-color: #6878ED;
-  color: #FFFFFF; }
-
-.card-bg-violet {
-  background-color: #A268ED;
-  color: #FFFFFF; }
-
-.card-bg-black {
-  background-color: #000000;
-  color: #FFFFFF; }
-
-.card-bg-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
-
-.card-bg-light-grey {
-  background-color: #566B78;
-  color: #FFFFFF; }
-
-.card-bg-white {
-  background-color: #FFFFFF;
-  color: #FFFFFF; }
-
 .card-bg-primary {
   background-color: #E95420;
   color: #FFFFFF; }
@@ -476,39 +267,6 @@ a {
 .card-bg-info {
   background-color: #6878ED;
   color: #FFFFFF; }
-
-.card-bordered-red {
-  border: 1px solid #F01A1A; }
-
-.card-bordered-orange {
-  border: 1px solid #E95420; }
-
-.card-bordered-yellow {
-  border: 1px solid #D9D92B; }
-
-.card-bordered-green {
-  border: 1px solid #2BD937; }
-
-.card-bordered-blue {
-  border: 1px solid #7AD0ED; }
-
-.card-bordered-indigo {
-  border: 1px solid #6878ED; }
-
-.card-bordered-violet {
-  border: 1px solid #A268ED; }
-
-.card-bordered-black {
-  border: 1px solid #000000; }
-
-.card-bordered-grey {
-  border: 1px solid #333333; }
-
-.card-bordered-light-grey {
-  border: 1px solid #566B78; }
-
-.card-bordered-white {
-  border: 1px solid #FFFFFF; }
 
 .card-bordered-primary {
   border: 1px solid #E95420; }
@@ -552,105 +310,6 @@ a {
 .tag-lg {
   font-size: 1.2rem;
   padding: 0.6rem 1.5rem; }
-
-.tag-red {
-  background-color: #F01A1A;
-  color: #FFFFFF; }
-
-.tag-bordered-red {
-  border: 1px solid #F01A1A;
-  color: #F01A1A;
-  font-weight: normal; }
-
-.tag-orange {
-  background-color: #E95420;
-  color: #FFFFFF; }
-
-.tag-bordered-orange {
-  border: 1px solid #E95420;
-  color: #E95420;
-  font-weight: normal; }
-
-.tag-yellow {
-  background-color: #D9D92B;
-  color: #FFFFFF; }
-
-.tag-bordered-yellow {
-  border: 1px solid #D9D92B;
-  color: #D9D92B;
-  font-weight: normal; }
-
-.tag-green {
-  background-color: #2BD937;
-  color: #FFFFFF; }
-
-.tag-bordered-green {
-  border: 1px solid #2BD937;
-  color: #2BD937;
-  font-weight: normal; }
-
-.tag-blue {
-  background-color: #7AD0ED;
-  color: #FFFFFF; }
-
-.tag-bordered-blue {
-  border: 1px solid #7AD0ED;
-  color: #7AD0ED;
-  font-weight: normal; }
-
-.tag-indigo {
-  background-color: #6878ED;
-  color: #FFFFFF; }
-
-.tag-bordered-indigo {
-  border: 1px solid #6878ED;
-  color: #6878ED;
-  font-weight: normal; }
-
-.tag-violet {
-  background-color: #A268ED;
-  color: #FFFFFF; }
-
-.tag-bordered-violet {
-  border: 1px solid #A268ED;
-  color: #A268ED;
-  font-weight: normal; }
-
-.tag-black {
-  background-color: #000000;
-  color: #FFFFFF; }
-
-.tag-bordered-black {
-  border: 1px solid #000000;
-  color: #000000;
-  font-weight: normal; }
-
-.tag-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
-
-.tag-bordered-grey {
-  border: 1px solid #333333;
-  color: #333333;
-  font-weight: normal; }
-
-.tag-light-grey {
-  background-color: #566B78;
-  color: #FFFFFF; }
-
-.tag-bordered-light-grey {
-  border: 1px solid #566B78;
-  color: #566B78;
-  font-weight: normal; }
-
-.tag-white {
-  background-color: #FFFFFF;
-  color: #FFFFFF; }
-
-.tag-bordered-white {
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  font-weight: normal; }
 
 .tag-primary {
   background-color: #E95420;
@@ -709,28 +368,6 @@ a {
 code {
   border-radius: 4px;
   padding: 4px; }
-  code .code-red {
-    color: #F01A1A; }
-  code .code-orange {
-    color: #E95420; }
-  code .code-yellow {
-    color: #D9D92B; }
-  code .code-green {
-    color: #2BD937; }
-  code .code-blue {
-    color: #7AD0ED; }
-  code .code-indigo {
-    color: #6878ED; }
-  code .code-violet {
-    color: #A268ED; }
-  code .code-black {
-    color: #000000; }
-  code .code-grey {
-    color: #333333; }
-  code .code-light-grey {
-    color: #566B78; }
-  code .code-white {
-    color: #FFFFFF; }
   code .code-primary {
     color: #E95420; }
   code .code-secondary {
@@ -751,39 +388,6 @@ pre {
   padding-left: 1em;
   color: inherit;
   border-left: 2px solid #7AD0ED; }
-
-.pre-red {
-  border-left: 2px solid #F01A1A; }
-
-.pre-orange {
-  border-left: 2px solid #E95420; }
-
-.pre-yellow {
-  border-left: 2px solid #D9D92B; }
-
-.pre-green {
-  border-left: 2px solid #2BD937; }
-
-.pre-blue {
-  border-left: 2px solid #7AD0ED; }
-
-.pre-indigo {
-  border-left: 2px solid #6878ED; }
-
-.pre-violet {
-  border-left: 2px solid #A268ED; }
-
-.pre-black {
-  border-left: 2px solid #000000; }
-
-.pre-grey {
-  border-left: 2px solid #333333; }
-
-.pre-light-grey {
-  border-left: 2px solid #566B78; }
-
-.pre-white {
-  border-left: 2px solid #FFFFFF; }
 
 .pre-primary {
   border-left: 2px solid #E95420; }

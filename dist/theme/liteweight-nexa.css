@@ -70,24 +70,6 @@ body {
   margin: 0;
   list-style: none; }
 
-.text-orange {
-  color: #E95420; }
-
-.text-blue {
-  color: #7AD0ED; }
-
-.text-black {
-  color: #000000; }
-
-.text-grey {
-  color: #333333; }
-
-.text-light-grey {
-  color: #566B78; }
-
-.text-white {
-  color: #FFFFFF; }
-
 .text-primary {
   color: #E95420; }
 
@@ -163,30 +145,6 @@ a {
 .card-full {
   background-color: #F5f7F9; }
 
-.card-bg-orange {
-  background-color: #E95420;
-  color: #FFFFFF; }
-
-.card-bg-blue {
-  background-color: #7AD0ED;
-  color: #FFFFFF; }
-
-.card-bg-black {
-  background-color: #000000;
-  color: #FFFFFF; }
-
-.card-bg-grey {
-  background-color: #333333;
-  color: #FFFFFF; }
-
-.card-bg-light-grey {
-  background-color: #566B78;
-  color: #FFFFFF; }
-
-.card-bg-white {
-  background-color: #FFFFFF;
-  color: #FFFFFF; }
-
 .card-bg-primary {
   background-color: #E95420;
   color: #FFFFFF; }
@@ -194,24 +152,6 @@ a {
 .card-bg-secondary {
   background-color: #7AD0ED;
   color: #FFFFFF; }
-
-.card-bordered-orange {
-  border: 1px solid #E95420; }
-
-.card-bordered-blue {
-  border: 1px solid #7AD0ED; }
-
-.card-bordered-black {
-  border: 1px solid #000000; }
-
-.card-bordered-grey {
-  border: 1px solid #333333; }
-
-.card-bordered-light-grey {
-  border: 1px solid #566B78; }
-
-.card-bordered-white {
-  border: 1px solid #FFFFFF; }
 
 .card-bordered-primary {
   border: 1px solid #E95420; }
