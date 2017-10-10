@@ -10,12 +10,14 @@
 
 .card-full{
   background-color: $background-light;
+  border-bottom: 1px solid $gray-fake-shadow;
 }
 
 @each $key, $value in $colours {
   .card-bg-#{$key} {
     background-color: $value;
     color: $white;
+    border-bottom: 1px solid $gray-fake-shadow;
   }
 }
 

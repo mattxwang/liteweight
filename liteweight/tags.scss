@@ -33,6 +33,7 @@
   .tag-#{$key} {
     background-color: $value;
     color: $white;
+    border-bottom: 1px solid $gray-fake-shadow;
   }
   .tag-bordered-#{$key} {
     border: 1px solid $value;

@@ -1,6 +1,7 @@
 code{
-  border-radius:4px;
+  border-radius:$border-radius;
   padding: 4px;
+  border-bottom: 1px solid $gray-fake-shadow;
   @each $key, $value in $colours {
     .code-#{$key} {
       color: $value;
@@ -15,6 +16,7 @@ pre {
   padding-left: 1em;
   color: inherit;
   border-left: 2px solid $secondary;
+  border-bottom: 1px solid $gray-fake-shadow;
 }
 
 @each $key, $value in $colours {
@@ -27,7 +29,10 @@ code,
 pre {
   color: inherit;
   background: $background-light;
-  //border-bottom: 1px solid $pre-border-bottom;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: initial;
+}
+
+pre > code{
+  border-bottom: none;
 }

@@ -140,15 +140,18 @@ a {
   border-radius: 3px; }
 
 .card-full {
-  background-color: #F5f7F9; }
+  background-color: #F5f7F9;
+  border-bottom: 1px solid #D8DEE9; }
 
 .card-bg-primary {
   background-color: #E95420;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border-bottom: 1px solid #D8DEE9; }
 
 .card-bg-secondary {
   background-color: #7AD0ED;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border-bottom: 1px solid #D8DEE9; }
 
 .card-bordered-primary {
   border: 1px solid #E95420; }
