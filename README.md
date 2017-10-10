@@ -24,6 +24,8 @@ We use [Grunt](https://gruntjs.com) to help us develop things!
 First, we need to install our dependencies, using npm. We'll also need the `grunt-cli` tool to help us run our grunt tasks.
 
 ```bash
+$ git clone https://github.com/malsf21/liteweight.git
+$ cd liteweight
 $ npm install
 $ npm install grunt-cli -g
 ```

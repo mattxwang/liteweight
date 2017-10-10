@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Liteweight</title>
+		<title>Liteweight | A Small CSS Framework by @malsf21 and @obrien66</title>
 		<link rel="stylesheet" type="text/css" href="dist/liteweight.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/syntax.css" />
@@ -28,14 +28,44 @@
 	</head>
 	<body class="main-body">
 		<h1 class="title title-1">Liteweight</h1>
-		<p class="text">
-			An educational CSS framework by <a href="https://matthewwang.me/">Matthew Wang</a> and <a href="http://obrien.tech">Nick O'Brien</a>.
+		<a rel="noopener" href="https://travis-ci.org/malsf21/liteweight">
+			<img src="https://travis-ci.org/malsf21/liteweight.svg?branch=gh-pages" alt="Build Status">
+		</a>
+		<a rel="noopener" href="https://github.com/malsf21/liteweight/releases">
+			<img src="https://img.shields.io/github/release/malsf21/liteweight.svg" alt="Build Status">
+		</a>
+		<p>
+			Liteweight is an educational CSS framework by <a rel="noopener" href="https://matthewwang.me/">Matthew Wang</a> and <a rel="noopener" href="http://obrien.tech">Nick O'Brien</a>. We originally developed this to help teach members of our computer science club the ins and outs of CSS and SASS, but since then we've been working on it to make it even better.
 		</p>
-		<a href="https://travis-ci.org/malsf21/liteweight"><img src="https://travis-ci.org/malsf21/liteweight.svg?branch=gh-pages" alt="Build Status"></a>
-		<a href="https://github.com/malsf21/liteweight/releases"><img src="https://img.shields.io/github/release/malsf21/liteweight.svg" alt="Build Status"></a>
+		<p>
+			This page offers documentation of what Liteweight has to offer, and how to use it properly. If something isn't working as intended, or we haven't documented it correctly, please let us know <a rel="noopener" href="https://github.com/malsf21/liteweight">on GitHub.</a>
+		</p>
+		<p>
+			As a side-note, we're working on making it easier to view this documentation (we recognize it's hard to read). For now, just scroll through everything.
+		</p>
+		<h2 class="title title-2">Development Setup</h2>
+		<p>
+			Development Setup is super easy! You just need to run five commands (assuming you have Node and NPM installed):
+			<pre class="pre-primary">
+				<code>
+$ <span class="sc">git clone https://github.com/malsf21/liteweight.git</span>
+$ <span class="sc">cd liteweight</span>
+$ <span class="sc">npm install</span>
+$ <span class="sc">npm install grunt-cli -g</span> // only if you don't have grunt-cli
+$ <span class="sc">npm run build</span>
+				</code>
+			</pre>
+		</p>
+		<h2 class="title title-2">Components and Themes</h2>
+		<p>
+			Liteweight, from the ground up, is designed for modularity and customization. That's why all of our code is written in SASS: editing small things is as easy as cake! You can write custom themes that add, remove, or modify components to Liteweight; that way, you can only keep the code that you need, and add what you need to make your own version of Liteweight. You can see a few examples of this in <a rel="noopener" href="https://github.com/malsf21/liteweight">our GitHub repository.</a>
+		</p>
+		<p>
+			We package a few default themes in, partially so developers can get an idea of how they work and partially for convenience's sake. Each of them have production equivalents (the <code>liteweight-nexa</code> theme is used on <a rel="noopener" href="https://matthewwang.me/">Matt's Website</a>, and the <code>liteweight-omun</code> theme is used on the <a rel="noopener" href="https://github.com/malsf21/omun.ca/tree/coming-soon">OMUN Coming Soon Landing Page</a>).
+		</p>
 		<h2 class="title title-2">Colours</h2>
-		<p class="text">
-			An important thing to know about liteweight is that most of our elements rely on our colour map. Here's what the default is:
+		<p>
+			When we designed Liteweight, we wanted to make things all colourful and pretty; that's why we designed it with a colour map in mind. Most of our components rely on this colour map to create coloured variations of themselves. Here are the defaults:
 		</p>
 		<div class="card card-bg-primary">
 			<h3 class="title title-3">Primary (#E95420)</h3>
@@ -55,15 +85,15 @@
 		<div class="card card-bg-info">
 			<h3 class="title title-3">Info (#6878ED)</h3>
 		</div>
-		<p class="text">
+		<p>
 			These colours can be edited in <code><span class="sc">liteweight/variables.scss</span></code>; they are often edited by themes.
 		</p>
 		<h2 class="title title-2">Typography</h2>
-		<p class="text">
+		<p>
 			Here's all the typographical elements that Liteweight modifies.
 		</p>
 		<h3 class="title title-3">Headings</h3>
-		<p class="text">
+		<p>
 			Liteweight doesn't modify the <code>&lt;<span class="sc">h-*</span>&gt;</code> tags directly; instead, it uses modifier classes to allow your code to be both semantically correct and rockin' awesome.
 		</p>
 		<div class="card card-full">
@@ -85,11 +115,11 @@
 			</code>
 		</pre>
 		<h3 class="title title-3">Coloured Text</h3>
-		<p class="text">
+		<p>
 			Now your text can be all the pretty colours you wanted! Just use the class <code><span class="vc">.text-*</span></code> to set the <code><span class="vc">color</span></code> property for any element.
 		</p>
 		<div class="card card-bordered-primary">
-			<div class="text">
+			<div>
 				<p>Default</p>
 				<p class="text-primary">Primary</p>
 				<p class="text-secondary">Secondary</p>
@@ -111,11 +141,11 @@
 			</code>
 		</pre>
 		<h3 class="title title-3">Links</h3>
-		<p class="text">
+		<p>
 			We add a bit of colour to links, but that's just about it. Use them as you would normally.
 		</p>
 		<div class="card card-full">
-			<p class="text">
+			<p>
 				<a href="#">Link</a>
 			</p>
 		</div>
@@ -148,7 +178,7 @@
 			</code>
 		</pre>
 		<h2 class="title title-2">Dropdowns <span class="tag tag-bordered-primary">WIP</span></h2>
-		<p class="text">Dropdowns are an extension of our buttons. Unlike most dropdown stylings, these ones are CSS only. In addition, they work with any of our colours in our colour map.</p>
+		<p>Dropdowns are an extension of our buttons. Unlike most dropdown stylings, these ones are CSS only. In addition, they work with any of our colours in our colour map.</p>
 		<div class="dropdown">
 				<a class="button button-primary">Dropdown</a>
 				<div class="dropdown-content">
@@ -176,7 +206,7 @@
 			</code>
 		</pre>
 		<h2 class="title title-2">Cards</h2>
-		<p class="text">
+		<p>
 			Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
 		</p>
 		<div class="card card-full">
@@ -210,7 +240,7 @@
 			</code>
 		</pre>
 		<h2 class="title title-2">Tags <span class="tag tag-bordered-primary">WIP</span></h2>
-		<p class="text">
+		<p>
 			Tags are a cool class that let you highlight or otherwise separate important pieces of text. We recommend you use tags in <code>&lt;<span class="sc">span</span>&gt;</code> tags. You can use tags simlarly to cards, and use our entire colour set.
 		</p>
 		<div class="card card-full">
@@ -232,7 +262,7 @@
 			</code>
 		</pre>
 		<h3 class="title title-3">Rounded Tags</h3>
-		<p class="text">
+		<p>
 			You can spin your tags right round. Works with other tag modifiers. Awesome!
 		</p>
 		<div class="card card-full">
@@ -254,7 +284,7 @@
 			</code>
 		</pre>
 		<h3 class="title title-3">Bordered Tags</h3>
-		<p class="text">
+		<p>
 			You can create bordered tags, similar to cards; it even works with other modifiers. Cool!
 		</p>
 		<div class="card card-full">
@@ -276,7 +306,7 @@
 			</code>
 		</pre>
 		<h3 class="title title-3">Sized Tags <span class="tag tag-bordered-primary">WIP</span></h3>
-		<p class="text">
+		<p>
 			Tag sizes can also be modified, and they still work with other tag modifiers.
 		</p>
 		<div class="card card-full">
@@ -293,7 +323,7 @@
 		</pre>
 		<h2 class="title title-2">Text Utilities</h2>
 		<h3 class="title title-3">Lists</h3>
-		<p class="text">
+		<p>
 			We added a simple utility that just makes an unstyled list.
 		</p>
 		<div class="card card-full">
@@ -315,7 +345,7 @@ Cool People
 			</code>
 		</pre>
 		<h3 class="title title-3">Text Positioning</h3>
-		<p class="text">
+		<p>
 			We added CSS classes that change <code><span class="sc">text-align</span></code> to left, center, and right.
 		</p>
 		<div class="card card-full">
@@ -332,7 +362,7 @@ Cool People
 		</pre>
 
 		<h3 class="title title-3">Text Sizes</h3>
-		<p class="text">
+		<p>
 			We added CSS classes that help you increase your relative font size.
 		</p>
 		<div class="card card-full">
@@ -351,7 +381,7 @@ Cool People
 		</pre>
 
 		<h2 class="title title-2">Navbar <span class="tag tag-bordered-primary">WIP</span></h2>
-		<p class="text">
+		<p>
 			Here are some navbar-esque components. While they aren't responsive in the traditional sense (no hamburger menu), they are compact enough to work on most screen sizes.
 		</p>
 		<nav class="nav">
@@ -391,24 +421,24 @@ Cool People
 			</code>
 		</pre>
 		<h2 class="title title-2">Images</h2>
-		<p class="text"><code><span class="sc">.block-responsive</span></code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
+		<p><code><span class="sc">.block-responsive</span></code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
 		<img class="block-responsive" src="logo.png" alt="Really Cool Logo" />
 		<pre class="pre-primary">
 			<code>
-&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
+&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
 			</code>
 	 	</pre>
 
-		<p class="text"><code><span class="sc">.block-balance</span></code> does something similar, except it also sets <code><span class="sc">margin-left</span></code> and <code><span class="sc">margin-right</span></code> to <code><span class="sc">auto</span></code></p>
+		<p><code><span class="sc">.block-balance</span></code> does something similar, except it also sets <code><span class="sc">margin-left</span></code> and <code><span class="sc">margin-right</span></code> to <code><span class="sc">auto</span></code></p>
 		<img class="block-balance" src="logo.png" alt="Really Cool Logo" />
 		<pre class="pre-primary">
 			<code>
-&lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"#"</span>&gt;
+&lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
 			</code>
 	 	</pre>
 
 		<footer class="text-center">
-			<a href="https://github.com/malsf21/liteweight"><span class="fa fa-github fa-5x"></span></a>
+			<a rel="noopener" href="https://github.com/malsf21/liteweight"><span class="fa fa-github fa-5x"></span></a>
 		</footer>
 	</body>
 </html>
