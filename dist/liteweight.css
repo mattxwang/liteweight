@@ -379,18 +379,6 @@ code {
   border-radius: 3px;
   padding: 4px;
   border-bottom: 1px solid #D8DEE9; }
-  code .code-primary {
-    color: #E95420; }
-  code .code-secondary {
-    color: #7AD0ED; }
-  code .code-success {
-    color: #2BD937; }
-  code .code-danger {
-    color: #F01A1A; }
-  code .code-caution {
-    color: #D9D92B; }
-  code .code-info {
-    color: #6878ED; }
 
 pre {
   padding-top: 1rem;
@@ -399,8 +387,7 @@ pre {
   padding-left: 1em;
   color: inherit;
   border-left: 2px solid #7AD0ED;
-  border-bottom: 1px solid #D8DEE9;
-  color: inherit; }
+  border-bottom: 1px solid #D8DEE9; }
 
 .pre-primary {
   border-left: 2px solid #E95420; }
@@ -422,6 +409,7 @@ pre {
 
 code,
 pre {
+  color: inherit;
   background: #F5f7F9;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: initial; }
