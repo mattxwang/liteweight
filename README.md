@@ -37,9 +37,3 @@ $ npm run build
 ```
 
 And now your code is nicely packaged in `dist/`! Awesome!
-
-## Notes
-
-There are a few undocumented things that we're still working on polishing and documenting. For reference, they are:
-* Themes
-* Navs

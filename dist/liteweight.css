@@ -399,7 +399,8 @@ pre {
   padding-left: 1em;
   color: inherit;
   border-left: 2px solid #7AD0ED;
-  border-bottom: 1px solid #D8DEE9; }
+  border-bottom: 1px solid #D8DEE9;
+  color: inherit; }
 
 .pre-primary {
   border-left: 2px solid #E95420; }
@@ -421,7 +422,6 @@ pre {
 
 code,
 pre {
-  color: inherit;
   background: #F5f7F9;
   -moz-font-smoothing: grayscale;
   -webkit-font-smoothing: initial; }

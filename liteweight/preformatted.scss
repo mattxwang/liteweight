@@ -2,11 +2,6 @@ code{
   border-radius:$border-radius;
   padding: 4px;
   border-bottom: 1px solid $gray-fake-shadow;
-  @each $key, $value in $colours {
-    .code-#{$key} {
-      color: $value;
-    }
-  }
 }
 
 pre {
