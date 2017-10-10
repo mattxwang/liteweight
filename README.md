@@ -12,9 +12,10 @@ Here's a general idea of each of the important files:
 | File Name | Description |
 |-----------|-------------|
 | `dist/` | The folder that contains final distribution files, in `.css` and `.min.css` format |
-| `lightweight.scss` | The SCSS file that compiles into `lightweight.css`.  |
-| `lightweight/*` | The files that are imported into `lightweight.scss`. To change colours and general theme edit `variables.scss` |
-| `theme/*` | Themes that we've made for liteweight. |
+| `liteweight.scss` | The SCSS file that compiles into `liteweight.css`.  |
+| `liteweight-*.scss` | Theme SCSS files that compile into `theme/liteweight-*.css`. These are just some example themes; make your own! |
+| `liteweight/*` | Individual components of liteweight, such as variables, buttons, and cards. |
+| `theme/*` | Theme support components, such as variable and component overrides. |
 
 ## Development
 
@@ -39,5 +40,4 @@ And now your code is nicely packaged in `dist/`! Awesome!
 
 There are a few undocumented things that we're still working on polishing and documenting. For reference, they are:
 * Themes
-* Dropdowns
 * Navs
