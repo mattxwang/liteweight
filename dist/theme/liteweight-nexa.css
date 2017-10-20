@@ -159,4 +159,80 @@ a {
 .card-bordered-secondary {
   border: 1px solid #7AD0ED; }
 
+code {
+  border-radius: 3px;
+  padding: 4px;
+  border-bottom: 1px solid #D8DEE9; }
+
+pre {
+  padding-top: 1rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding-left: 1em;
+  color: inherit;
+  border-left: 2px solid #7AD0ED;
+  border-bottom: 1px solid #D8DEE9; }
+
+.pre-primary {
+  border-left: 2px solid #E95420; }
+
+.pre-secondary {
+  border-left: 2px solid #7AD0ED; }
+
+code,
+pre {
+  color: inherit;
+  background: #F5f7F9;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: initial; }
+
+pre > code {
+  border-bottom: none; }
+
+/* Tags */
+.tag {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 1rem;
+  line-height: 2;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  border-radius: 3px; }
+
+.tag-full {
+  background-color: #F5f7F9; }
+
+.tag-rounded {
+  border-radius: 500px; }
+
+.tag-sm {
+  font-size: 0.75rem;
+  padding: 0 0.75rem;
+  line-height: 1.5; }
+
+.tag-lg {
+  font-size: 1.25rem;
+  padding: 0 1.5rem;
+  line-height: 2.5; }
+
+.tag-primary {
+  background-color: #E95420;
+  color: #FFFFFF;
+  border-bottom: 1px solid #D8DEE9; }
+
+.tag-bordered-primary {
+  border: 1px solid #E95420;
+  color: #E95420;
+  font-weight: normal; }
+
+.tag-secondary {
+  background-color: #7AD0ED;
+  color: #FFFFFF;
+  border-bottom: 1px solid #D8DEE9; }
+
+.tag-bordered-secondary {
+  border: 1px solid #7AD0ED;
+  color: #7AD0ED;
+  font-weight: normal; }
+
 /*# sourceMappingURL=liteweight-nexa.css.map */
