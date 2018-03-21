@@ -13,6 +13,28 @@ body {
   color: $font-normal;
 }
 
+@each $key, $value in $colours{
+	.text-#{$key} {
+		color: $value !important;
+	}
+  .bg-#{$key}{
+    background-color: $value;
+    color: white;
+  }
+  .border-top-#{$key} {
+    border-top: 2px solid $value;
+  }
+  .border-right-#{$key} {
+    border-right: 2px solid $value;
+  }
+  .border-bottom-#{$key} {
+    border-bottom: 2px solid $value;
+  }
+  .border-left-#{$key} {
+    border-left: 2px solid $value;
+  }
+}
+
 .main-body{
   margin: 0 auto;
   max-width: 50rem;
@@ -42,4 +64,9 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.fixed-top{
+  position: fixed;
+  top: 0;
 }

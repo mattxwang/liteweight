@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     __    _ __                    _       __    __
    / /   (_) /____ _      _____  (_)___ _/ /_  / /_
@@ -43,6 +44,44 @@ body {
   line-height: 1.5;
   color: #566B78; }
 
+.text-primary {
+  color: #E95420 !important; }
+
+.bg-primary {
+  background-color: #E95420;
+  color: white; }
+
+.border-top-primary {
+  border-top: 2px solid #E95420; }
+
+.border-right-primary {
+  border-right: 2px solid #E95420; }
+
+.border-bottom-primary {
+  border-bottom: 2px solid #E95420; }
+
+.border-left-primary {
+  border-left: 2px solid #E95420; }
+
+.text-secondary {
+  color: #7AD0ED !important; }
+
+.bg-secondary {
+  background-color: #7AD0ED;
+  color: white; }
+
+.border-top-secondary {
+  border-top: 2px solid #7AD0ED; }
+
+.border-right-secondary {
+  border-right: 2px solid #7AD0ED; }
+
+.border-bottom-secondary {
+  border-bottom: 2px solid #7AD0ED; }
+
+.border-left-secondary {
+  border-left: 2px solid #7AD0ED; }
+
 .main-body {
   margin: 0 auto;
   max-width: 50rem; }
@@ -70,11 +109,9 @@ body {
   margin: 0;
   list-style: none; }
 
-.text-primary {
-  color: #E95420; }
-
-.text-secondary {
-  color: #7AD0ED; }
+.fixed-top {
+  position: fixed;
+  top: 0; }
 
 .text-2x {
   font-size: 2em; }
@@ -143,16 +180,6 @@ a {
   background-color: #F5f7F9;
   border-bottom: 1px solid #D8DEE9; }
 
-.card-bg-primary {
-  background-color: #E95420;
-  color: #FFFFFF;
-  border-bottom: 1px solid #D8DEE9; }
-
-.card-bg-secondary {
-  background-color: #7AD0ED;
-  color: #FFFFFF;
-  border-bottom: 1px solid #D8DEE9; }
-
 .card-bordered-primary {
   border: 1px solid #E95420; }
 
@@ -170,14 +197,8 @@ pre {
   white-space: pre-wrap;
   padding-left: 1em;
   color: inherit;
-  border-left: 2px solid #7AD0ED;
+  border-left: 2px solid #E95420;
   border-bottom: 1px solid #D8DEE9; }
-
-.pre-primary {
-  border-left: 2px solid #E95420; }
-
-.pre-secondary {
-  border-left: 2px solid #7AD0ED; }
 
 code,
 pre {
@@ -188,6 +209,25 @@ pre {
 
 pre > code {
   border-bottom: none; }
+
+blockquote {
+  background: #F5f7F9;
+  border-left: 2px solid #E95420;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote:before {
+  color: #E95420;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote p {
+  display: inline; }
 
 /* Tags */
 .tag {

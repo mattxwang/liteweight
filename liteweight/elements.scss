@@ -10,14 +10,8 @@ pre {
   white-space: pre-wrap;
   padding-left: 1em;
   color: inherit;
-  border-left: 2px solid $secondary;
+  border-left: 2px solid $primary;
   border-bottom: 1px solid $gray-fake-shadow;
-}
-
-@each $key, $value in $colours {
-  .pre-#{$key} {
-    border-left: 2px solid $value;
-  }
 }
 
 code,
@@ -30,4 +24,24 @@ pre {
 
 pre > code{
   border-bottom: none;
+}
+
+blockquote {
+  background: $background-light;
+  border-left: 2px solid $primary;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: $primary;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }

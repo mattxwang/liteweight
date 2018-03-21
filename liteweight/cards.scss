@@ -14,15 +14,6 @@
 }
 
 @each $key, $value in $colours {
-  .card-bg-#{$key} {
-    background-color: $value;
-    color: $white;
-    border-bottom: 1px solid $gray-fake-shadow;
-  }
-}
-
-
-@each $key, $value in $colours {
   .card-bordered-#{$key} {
     border: 1px solid $value;
   }

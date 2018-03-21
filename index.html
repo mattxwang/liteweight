@@ -46,7 +46,7 @@
 		<h2 class="title title-2">Development Setup</h2>
 		<p>
 			Development Setup is super easy! You just need to run five commands (assuming you have Node and NPM installed):
-			<pre class="pre-primary">
+			<pre>
 				<code>
 $ <span class="sc">git clone https://github.com/malsf21/liteweight.git</span>
 $ <span class="sc">cd liteweight</span>
@@ -67,27 +67,61 @@ $ <span class="sc">npm run build</span>
 		<p>
 			When we designed Liteweight, we wanted to make things all colourful and pretty; that's why we designed it with a colour map in mind. Most of our components rely on this colour map to create coloured variations of themselves. Here are the defaults:
 		</p>
-		<div class="card card-bg-primary">
+		<div class="card bg-primary">
 			<h3 class="title title-3">Primary (#E95420)</h3>
 		</div>
-		<div class="card card-bg-secondary">
+		<div class="card bg-secondary">
 			<h3 class="title title-3">Secondary (#7AD0ED)</h3>
 		</div>
-		<div class="card card-bg-success">
+		<div class="card bg-success">
 			<h3 class="title title-3">Success (#2BD937)</h3>
 		</div>
-		<div class="card card-bg-danger">
+		<div class="card bg-danger">
 			<h3 class="title title-3">Danger (#F01A1A)</h3>
 		</div>
-		<div class="card card-bg-caution">
+		<div class="card bg-caution">
 			<h3 class="title title-3">Caution (#D9D92B)</h3>
 		</div>
-		<div class="card card-bg-info">
+		<div class="card bg-info">
 			<h3 class="title title-3">Info (#6878ED)</h3>
 		</div>
+		<div class="card bg-white">
+			<h3 class="title title-3 text-black">White (#FFFFFF)</h3>
+		</div>
+		<div class="card bg-black">
+			<h3 class="title title-3">Black (#000000)</h3>
+		</div>
 		<p>
-			These colours can be edited in <code><span class="sc">liteweight/variables.scss</span></code>; they are often edited by themes.
+			Note: all elements are also created in black and white, but we don't display them here as examples. Rest assured, you can still use them!
 		</p>
+		<h3 class="title title-3">Colour Borders/Backgrounds</h3>
+		<p>
+			You can use <code>bg-*</code> and <code>bg-[direction]-*</code> with our colours to add flair to any object.
+		</p>
+		<div class="border-top-primary" style="margin:1rem;padding:1rem;">
+			Top
+		</div>
+		<div class="border-right-primary" style="margin:1rem;padding:1rem;">
+			Right
+		</div>
+		<div class="border-bottom-primary" style="margin:1rem;padding:1rem;">
+			Bottom
+		</div>
+		<div class="border-left-primary" style="margin:1rem;padding:1rem;">
+			Left
+		</div>
+		<div class="bg-primary" style="margin:1rem;padding:1rem;">
+			Filled
+		</div>
+		<pre>
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"border-top-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Top&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"border-right-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Right&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"border-bottom-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Left&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"border-left-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Bottom&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"bg-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Filled&lt;<span class="sc">/div</span>&gt;
+			</code>
+		</pre>
 		<h2 class="title title-2">Typography</h2>
 		<p>
 			Here's all the typographical elements that Liteweight modifies.
@@ -104,7 +138,7 @@ $ <span class="sc">npm run build</span>
 			<h5 class="title title-5">Heading 5</h5>
 			<h6 class="title title-6">Heading 6</h6>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">h1 class=</span><span class="vc">"title title-1"</span>&gt;Heading 1&lt;<span class="sc">/h1</span>&gt;
 &lt;<span class="sc">h2 class=</span><span class="vc">"title title-2"</span>&gt;Heading 2&lt;<span class="sc">/h2</span>&gt;
@@ -129,7 +163,7 @@ $ <span class="sc">npm run build</span>
 				<p class="text-info">Info</p>
 			</div>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">p</span>&gt;Default&lt;<span class="sc">/p</span>&gt;
 &lt;<span class="sc">p class=</span><span class="vc">"text-primary"</span>&gt;Primary&lt;<span class="sc">/p</span>&gt;
@@ -149,7 +183,7 @@ $ <span class="sc">npm run build</span>
 				<a href="#">Link</a>
 			</p>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">a href=</span><span class="vc">"#"</span>Link&gt;&lt;<span class="sc">/a</span>&gt;
 			</code>
@@ -161,20 +195,20 @@ P. Sherman
 42 Wallaby Way
 Sydney, NSW
     </pre>
-		<pre class="pre-primary">
+		<pre class="border-left-secondary">
 Hey, I just met you, and this is crazy
 But here's my number, so call me maybe
 It's hard to look right at you, baby
 But here's my number, so call me maybe
     </pre>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">pre</span>&gt;
 	P. Sherman
 	42 Wallaby Way
 	Sydney, NSW
 &lt;/<span class="sc">pre</span>&gt;
-&lt;<span class="sc">pre class=</span><span class="vc">"pre-primary</span>&gt;
+&lt;<span class="sc">pre class=</span><span class="vc">"border-left-secondary"</span>&gt;
 	Hey, I just met you, and this is crazy
 	But here's my number, so call me maybe
 	It's hard to look right at you, baby
@@ -187,11 +221,19 @@ But here's my number, so call me maybe
     <code>.random-class</code>
     <code class="text-primary">console.log("A tree");</code>
     <code class="text-secondary">["hip", "hip"]</code>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">code</span>&gt;.random-class&lt;/<span class="sc">code</span>&gt;
 &lt;<span class="sc">code class=</span><span class="vc">"text-primary</span>&gt;console.log("A tree");&lt;/<span class="sc">code</span>&gt;
 &lt;<span class="sc">code class=</span><span class="vc">"text-secondary"</span>&gt;["hip", "hip"]&lt;/<span class="sc">code</span>&gt;
+			</code>
+		</pre>
+		<h2 class="title title-2">Blockquote</h2>
+    <p>We added a bit of flair to the blockquote. Spicy.</p>
+    <blockquote>To be or not to be, that is the question.</blockquote>
+		<pre>
+			<code>
+&lt;<span class="sc">blockquote</span>&gt;To be or not to be, that is the question.&lt;/<span class="sc">blockquote</span>&gt;
 			</code>
 		</pre>
 		<h2 class="title title-2">Buttons</h2>
@@ -207,7 +249,7 @@ But here's my number, so call me maybe
 		<a class="button button-caution" href="#">Caution Button</a>
 		</br>
 		<a class="button button-info" href="#">Info Button</a>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">a class=</span><span class="vc">"button button-primary"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Primary Button&lt;/<span class="sc">a</span>&gt;
 &lt;<span class="sc">a class=</span><span class="vc">"button button-secondary</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Secondary Button&lt;/<span class="sc">a</span>&gt;
@@ -230,7 +272,7 @@ But here's my number, so call me maybe
 					</ul>
 				</div>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
 	&lt;<span class="sc">a class=</span><span class="vc">"button button-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
@@ -252,19 +294,19 @@ But here's my number, so call me maybe
 		<div class="card card-full">
 			This is a default card (with a background).
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">div class=</span><span class="vc">"card card-full"</span>&gt;
 	This is a default card (with a background).
 &lt;<span class="sc">/div</span>&gt;
 			</code>
 		</pre>
-		<div class="card card-bg-primary">
+		<div class="card bg-primary">
 			This is a card with the "primary" background. You can use any colour in our colour array for card backgrounds.
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
-&lt;<span class="sc">div class=</span><span class="vc">"card card-bg-primary"</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"card bg-primary"</span>&gt;
 	This is a card with the "primary" background. You can use any colour in our colour array for card backgrounds.
 &lt;<span class="sc">/div</span>&gt;
 			</code>
@@ -272,7 +314,7 @@ But here's my number, so call me maybe
 		<div class="card card-bordered-primary">
 			This is a card with the "primary" border. You can use any colour in our colour array for card borders.
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">div class=</span><span class="vc">"card card-border-primary"</span>&gt;
 	This is a card with the "primary" border. You can use any colour in our colour array for card borders.
@@ -291,7 +333,7 @@ But here's my number, so call me maybe
 			<span class="tag tag-caution">Caution</span>
 			<span class="tag tag-info">Info</span>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
@@ -313,7 +355,7 @@ But here's my number, so call me maybe
 			<span class="tag tag-rounded tag-caution">Caution</span>
 			<span class="tag tag-rounded tag-info">Info</span>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
@@ -335,7 +377,7 @@ But here's my number, so call me maybe
 			<span class="tag tag-bordered-caution">Caution</span>
 			<span class="tag tag-bordered-info">Info</span>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
@@ -354,7 +396,7 @@ But here's my number, so call me maybe
 			<span class="tag tag-bordered-primary">Standard</span>
 			<span class="tag tag-lg tag-bordered-primary">Large</span>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-sm tag-bordered-primary"</span>&gt;Small&lt;<span class="sc">/span</span>&gt;
 &lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-primary"</span>&gt;Standard&lt;<span class="sc">/span</span>&gt;
@@ -374,7 +416,7 @@ But here's my number, so call me maybe
 				...
 			</ul>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 Cool People
 &lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
@@ -393,7 +435,7 @@ Cool People
 			<p class="text-center">Center-aligned text</p>
 			<p class="text-right">Right-aligned text</p>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">p class=</span><span class="vc">"text-left"</span>&gt;Left-aligned text&lt;<span class="sc">/p</span>&gt;
 &lt;<span class="sc">p class=</span><span class="vc">"text-center"</span>&gt;Center-aligned text&lt;<span class="sc">/p</span>&gt;
@@ -411,7 +453,7 @@ Cool People
 			<p class="text-4x">4x Text</p>
 			<p class="text-5x">5x Text</p>
 		</div>
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">p class=</span><span class="vc">"text-2x"</span>&gt;2x Text&lt;<span class="sc">/p</span>&gt;
 &lt;<span class="sc">p class=</span><span class="vc">"text-3x"</span>&gt;3x Text&lt;<span class="sc">/p</span>&gt;
@@ -422,48 +464,37 @@ Cool People
 
 		<h2 class="title title-2">Navbar <span class="tag tag-bordered-primary">WIP</span></h2>
 		<p>
-			Here are some navbar-esque components. While they aren't responsive in the traditional sense (no hamburger menu), they are compact enough to work on most screen sizes.
+			Here are some navbar-esque components. While they aren't responsive in the traditional sense (no hamburger menu), they are compact enough to work on most screen sizes. You can also attach <code>.fixed-top</code> to the <code>nav</code> element to make it stick to the top of the screen.
 		</p>
-		<nav class="nav">
-			<ul class="nav-list">
-				<li class="nav-item active"><a>Item</a></li>
-			  	<li class="nav-item"><a>Item</a></li>
-			  	<li class="nav-item"><a>Item</a></li>
-			  	<li class="nav-item"><a>Item</a></li>
-			</ul>
+		<nav>
+			<div class="nav-main">
+				<a class="nav-title text-primary">Title</a>
+				<ul class="nav-list">
+					<li class="nav-item active"><a>Item</a></li>
+				  	<li class="nav-item"><a class="link-white">Item</a></li>
+				  	<li class="nav-item"><a class="link-white">Item</a></li>
+				  	<li class="nav-item"><a class="link-white">Item</a></li>
+				</ul>
+			</div>
 		</nav>
-		<pre class="pre-primary">
+		<pre>
 			<code>
-&lt;<span class="sc">nav class=</span><span class="vc">"nav"</span>&gt;
-    &lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
-	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	    &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-        &lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-    &lt;/<span class="sc">ul</span>&gt;
+&lt;<span class="sc">nav</span>&gt;
+	&lt;<span class="sc">div class=</span><span class="vc">"nav-main"</span>&gt;
+		&lt;<span class="sc">a class=</span><span class="vc">"nav-title text-primary"</span>&gt;Title&lt;/<span class="sc">a</span>&gt;
+		&lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
+			&lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&lt;/<span class="sc">li</span>&gt;
+			&lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;< class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&lt;/<span class="sc">li</span>&gt;
+			&lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+		&lt;/<span class="sc">ul</span>&gt;
+	&lt;/<span class="sc">div</span>&gt;
 &lt;/<span class="sc">nav</span>&gt;
-			</code>
-		</pre>
-		<ul class="v-nav">
-			<li class="v-nav-item"><a>Vertical navbar item</a></li>
-			<li class="v-nav-item"><a>Vertical navbar item</a></li>
-			<li class="v-nav-item"><a>Vertical navbar item</a></li>
-			<li class="v-nav-item"><a>Vertical navbar item</a></li>
-		</ul>
-		<pre class="pre-primary">
-			<code>
-&lt;<span class="sc">ul class=</span><span class="vc">"v-nav"</span>&gt;
-	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-	&lt;<span class="sc">li class=</span><span class="vc">"v-nav-item"</span>&gt;&lt;<span class="sc">a</span>&gt;Vertical navbar item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-&lt;/<span class="sc">ul</span>&gt;
 			</code>
 		</pre>
 		<h2 class="title title-2">Images</h2>
 		<p><code><span class="sc">.block-responsive</span></code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
 		<img class="block-responsive" src="logo.png" alt="Really Cool Logo" />
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
 			</code>
@@ -471,7 +502,7 @@ Cool People
 
 		<p><code><span class="sc">.block-balance</span></code> does something similar, except it also sets <code><span class="sc">margin-left</span></code> and <code><span class="sc">margin-right</span></code> to <code><span class="sc">auto</span></code></p>
 		<img class="block-balance" src="logo.png" alt="Really Cool Logo" />
-		<pre class="pre-primary">
+		<pre>
 			<code>
 &lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
 			</code>
