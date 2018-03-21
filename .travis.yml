@@ -4,10 +4,9 @@ branches:
   - "gh-pages"
   - /dev-(.*)/
 node_js:
+  - "9"
+  - "8"
   - "7"
-  - "6"
-  - "5"
-  - "4"
 
 before_script:
   - npm install grunt-cli -g
