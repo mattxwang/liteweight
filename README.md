@@ -21,13 +21,12 @@ Here's a general idea of each of the important files:
 
 We use [Grunt](https://gruntjs.com) to help us develop things!
 
-First, we need to install our dependencies, using npm. We'll also need the `grunt-cli` tool to help us run our grunt tasks.
+First, we need to install our dependencies, using npm. 
 
 ```bash
 $ git clone https://github.com/malsf21/liteweight.git
 $ cd liteweight
 $ npm install
-$ npm install grunt-cli -g
 ```
 
 Then, to compile `liteweight.scss` into some awesome, nicely minified code, run our `npm run build` command. This basically runs `grunt` (but might do more later).

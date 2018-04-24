@@ -8,9 +8,6 @@ node_js:
   - "8"
   - "7"
 
-before_script:
-  - npm install grunt-cli -g
-
 script:
   - npm run build
 
