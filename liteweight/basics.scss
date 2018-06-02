@@ -38,12 +38,7 @@ body {
 .main-body{
   margin: 0 auto;
   max-width: 50rem;
-  @media (min-width:800px) {
-    padding: 5rem $spacer;
-  }
-  @media (max-width:800px) {
-    padding: 2rem $spacer;
-  }
+  padding: 5rem $spacer;
 }
 
 .block-responsive{

@@ -84,13 +84,8 @@ body {
 
 .main-body {
   margin: 0 auto;
-  max-width: 50rem; }
-  @media (min-width: 800px) {
-    .main-body {
-      padding: 5rem 1rem; } }
-  @media (max-width: 800px) {
-    .main-body {
-      padding: 2rem 1rem; } }
+  max-width: 50rem;
+  padding: 5rem 1rem; }
 
 .block-responsive {
   display: block;
