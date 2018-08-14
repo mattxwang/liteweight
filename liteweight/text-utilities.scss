@@ -31,9 +31,10 @@ a {
   }
 }
 
-.link-white{
-	color: $white;
-  text-decoration: underline;
+@each $key, $value in $colours{
+	.link-#{$key} {
+		color: $value;
+	}
 }
 
 .text-left{

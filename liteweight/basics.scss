@@ -19,19 +19,27 @@ body {
 	}
   .bg-#{$key}{
     background-color: $value;
-    color: white;
+    @if $value == $white{
+      color: $font-normal;
+    }
+    @else{
+      color: $white;
+    }
+  }
+  .border-#{$key}{
+    border: 1px solid $value;
   }
   .border-top-#{$key} {
-    border-top: 2px solid $value;
+    border-top: 1px solid $value;
   }
   .border-right-#{$key} {
-    border-right: 2px solid $value;
+    border-right: 1px solid $value;
   }
   .border-bottom-#{$key} {
-    border-bottom: 2px solid $value;
+    border-bottom: 1px solid $value;
   }
   .border-left-#{$key} {
-    border-left: 2px solid $value;
+    border-left: 1px solid $value;
   }
 }
 

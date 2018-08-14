@@ -394,6 +394,23 @@ a {
   background-color: #F5f7F9;
   border-bottom: 2px solid #D8DEE9; }
 
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  padding-top: 2em;
+  display: none;
+  position: absolute;
+  background-color: #F5f7F9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  border-radius: 3px; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
 code {
   border-radius: 3px;
   padding: 4px;
@@ -437,6 +454,58 @@ blockquote:before {
 blockquote p {
   display: inline; }
 
+nav {
+  width: 100%; }
+
+.nav-main {
+  display: block;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: inherit;
+  border-radius: inherit;
+  color: #566B78; }
+
+.nav-right {
+  float: right; }
+
+.nav-title {
+  float: left;
+  display: block;
+  font-size: 1.5em;
+  padding: 0.25rem 1.25rem 0.4rem 0;
+  text-decoration: none; }
+
+.nav-title:hover {
+  text-decoration: none; }
+
+.nav-item {
+  float: left; }
+
+.nav-item a {
+  display: block;
+  color: #566B78;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none; }
+
+.active {
+  border-bottom: 3px solid #E95420; }
+
+.nav-item a:hover {
+  background-color: #C8CACC;
+  text-decoration: none; }
+
+.nav-item .active {
+  color: #F5f7F9; }
+
 /* Tags */
 .tag {
   display: inline-block;
@@ -461,4 +530,4 @@ blockquote p {
   padding: 0 1.5rem;
   line-height: 2.5; }
 
-/*# sourceMappingURL=liteweight.css.map */
+/*# sourceMappingURL=liteweight-full.css.map */

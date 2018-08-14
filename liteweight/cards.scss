@@ -10,11 +10,5 @@
 
 .card-full{
   background-color: $background-light;
-  border-bottom: 1px solid $gray-fake-shadow;
-}
-
-@each $key, $value in $colours {
-  .card-bordered-#{$key} {
-    border: 1px solid $value;
-  }
+  border-bottom: 2px solid $gray-fake-shadow;
 }

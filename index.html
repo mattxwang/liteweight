@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Liteweight | A Small CSS Framework by @malsf21 and @obrien66</title>
-		<link rel="stylesheet" type="text/css" href="dist/liteweight.min.css" />
+		<link rel="stylesheet" type="text/css" href="dist/liteweight-full.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/syntax.css" />
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -95,8 +95,11 @@ $ <span class="sc">npm run build</span>
 		</p>
 		<h3 class="title title-3">Colour Borders/Backgrounds</h3>
 		<p>
-			You can use <code>bg-*</code> and <code>bg-[direction]-*</code> with our colours to add flair to any object.
+			You can use <code>bg-*</code>, <code>border-*</code>, and <code>border-[direction]-*</code> with our colours to add flair to any object.
 		</p>
+		<div class="border-primary" style="margin:1rem;padding:1rem;">
+			All
+		</div>
 		<div class="border-top-primary" style="margin:1rem;padding:1rem;">
 			Top
 		</div>
@@ -110,15 +113,16 @@ $ <span class="sc">npm run build</span>
 			Left
 		</div>
 		<div class="bg-primary" style="margin:1rem;padding:1rem;">
-			Filled
+			Fill
 		</div>
 		<pre>
 			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"border-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;All&lt;<span class="sc">/div</span>&gt;
 &lt;<span class="sc">div class=</span><span class="vc">"border-top-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Top&lt;<span class="sc">/div</span>&gt;
 &lt;<span class="sc">div class=</span><span class="vc">"border-right-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Right&lt;<span class="sc">/div</span>&gt;
-&lt;<span class="sc">div class=</span><span class="vc">"border-bottom-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Left&lt;<span class="sc">/div</span>&gt;
-&lt;<span class="sc">div class=</span><span class="vc">"border-left-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Bottom&lt;<span class="sc">/div</span>&gt;
-&lt;<span class="sc">div class=</span><span class="vc">"bg-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Filled&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"border-bottom-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Bottom&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"border-left-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Left&lt;<span class="sc">/div</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"bg-primary"</span><span class="sc"> style=</span><span class="vc">"margin:1rem;padding:1rem;"</span>&gt;Fill&lt;<span class="sc">/div</span>&gt;
 			</code>
 		</pre>
 		<h2 class="title title-2">Typography</h2>
@@ -127,7 +131,7 @@ $ <span class="sc">npm run build</span>
 		</p>
 		<h3 class="title title-3">Headings</h3>
 		<p>
-			Liteweight doesn't modify the <code>&lt;<span class="sc">h-*</span>&gt;</code> tags directly; instead, it uses modifier classes to allow your code to be both semantically correct and rockin' awesome.
+			Liteweight doesn't modify the <code>&lt;h-*&gt;</code> tags directly; instead, it uses modifier classes to allow your code to be both semantically correct and rockin' awesome.
 		</p>
 		<div class="card card-full">
 			<h1 class="title title-1">Heading 1</h1>
@@ -149,9 +153,9 @@ $ <span class="sc">npm run build</span>
 		</pre>
 		<h3 class="title title-3">Coloured Text</h3>
 		<p>
-			Now your text can be all the pretty colours you wanted! Just use the class <code><span class="vc">.text-*</span></code> to set the <code><span class="vc">color</span></code> property for any element.
+			Now your text can be all the pretty colours you wanted! Just use the class <code>.text-*</code> to set the <code>color</code> property for any element.
 		</p>
-		<div class="card card-bordered-primary">
+		<div class="card border-primary">
 			<div>
 				<p>Default</p>
 				<p class="text-primary">Primary</p>
@@ -175,16 +179,26 @@ $ <span class="sc">npm run build</span>
 		</pre>
 		<h3 class="title title-3">Links</h3>
 		<p>
-			We add a bit of colour to links, but that's just about it. Use them as you would normally.
+			We add a bit of colour to links, and also let you use colours with them. Exciting!
 		</p>
-		<div class="card card-full">
+		<div class="card border-primary">
 			<p>
-				<a href="#">Link</a>
+				<a href="#">Link</a> <br />
+				<a class="link-secondary" href="#">Link</a> <br />
+				<a class="link-success" href="#">Link</a> <br />
+				<a class="link-danger" href="#">Link</a> <br />
+				<a class="link-caution" href="#">Link</a> <br />
+				<a class="link-info" href="#">Link</a> <br />
 			</p>
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">a href=</span><span class="vc">"#"</span>Link&gt;&lt;<span class="sc">/a</span>&gt;
+&lt;<span class="sc">a href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"link-secondary"</span> href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"link-success"</span> href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"link-danger"</span> href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"link-caution"</span> href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
+&lt;<span class="sc">a class=</span><span class="vc">"link-info"</span> href=</span><span class="vc">"#"</span>&gt;Link&lt;/<span class="sc">a</span>&gt;
 			</code>
 		</pre>
 		<h2 class="title title-2">Preformatted Text</h2>
@@ -258,34 +272,6 @@ But here's my number, so call me maybe
 &lt;<span class="sc">a class=</span><span class="vc">"button button-info"</span><span class="sc"> href=</span><span class="vc">"#"</span>&gt;Info Button&lt;/<span class="sc">a</span>&gt;
 			</code>
 		</pre>
-		<h2 class="title title-2">Dropdowns <span class="tag tag-bordered-primary">WIP</span></h2>
-		<p>Dropdowns are an extension of our buttons. Unlike most dropdown stylings, these ones are CSS only. In addition, they work with any of our colours in our colour map.</p>
-		<div class="dropdown">
-				<a class="button button-primary">Dropdown</a>
-				<div class="dropdown-content">
-					<ul class="list-unstyled">
-						<li><a>Dropdown link</a></li>
-						<li><a>Dropdown link</a></li>
-						<li><a>Dropdown link</a></li>
-						<li><a>Dropdown link</a></li>
-					</ul>
-				</div>
-		</div>
-		<pre>
-			<code>
-&lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
-	&lt;<span class="sc">a class=</span><span class="vc">"button button-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
-	&lt;<span class="sc">div class=</span><span class="vc">"dropdown-content"</span>&gt;
-		&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
-				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
-			&lt;/<span class="sc">ul</span>&gt;
-	 &lt;/<span class="sc">div</span>&gt;
-&lt;/<span class="sc">div</span>&gt;
-			</code>
-		</pre>
 		<h2 class="title title-2">Cards</h2>
 		<p>
 			Cards are a nice class that wraps anything that's inside them. They can contain anything and everything.
@@ -310,36 +296,36 @@ But here's my number, so call me maybe
 &lt;<span class="sc">/div</span>&gt;
 			</code>
 		</pre>
-		<div class="card card-bordered-primary">
+		<div class="card border-primary">
 			This is a card with the "primary" border. You can use any colour in our colour array for card borders.
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">div class=</span><span class="vc">"card card-border-primary"</span>&gt;
+&lt;<span class="sc">div class=</span><span class="vc">"card border-primary"</span>&gt;
 	This is a card with the "primary" border. You can use any colour in our colour array for card borders.
 &lt;<span class="sc">/div</span>&gt;
 			</code>
 		</pre>
-		<h2 class="title title-2">Tags <span class="tag tag-bordered-primary">WIP</span></h2>
+		<h2 class="title title-2">Tags</h2>
 		<p>
-			Tags are a cool class that let you highlight or otherwise separate important pieces of text. We recommend you use tags in <code>&lt;<span class="sc">span</span>&gt;</code> tags. You can use tags simlarly to cards, and use our entire colour set.
+			Tags are a cool class that let you highlight or otherwise separate important pieces of text. We recommend you use tags in <code>&lt;span&gt;</code> tags. You can use tags simlarly to cards, and use our entire colour set.
 		</p>
 		<div class="card card-full">
-			<span class="tag tag-primary">Primary</span>
-			<span class="tag tag-secondary">Secondary</span>
-			<span class="tag tag-success">Success</span>
-			<span class="tag tag-danger">Danger</span>
-			<span class="tag tag-caution">Caution</span>
-			<span class="tag tag-info">Info</span>
+			<span class="tag bg-primary">Primary</span>
+			<span class="tag bg-secondary">Secondary</span>
+			<span class="tag bg-success">Success</span>
+			<span class="tag bg-danger">Danger</span>
+			<span class="tag bg-caution">Caution</span>
+			<span class="tag bg-info">Info</span>
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
 			</code>
 		</pre>
 		<h3 class="title title-3">Rounded Tags</h3>
@@ -347,62 +333,62 @@ But here's my number, so call me maybe
 			You can spin your tags right round. Works with other tag modifiers. Awesome!
 		</p>
 		<div class="card card-full">
-			<span class="tag tag-rounded tag-primary">Primary</span>
-			<span class="tag tag-rounded tag-secondary">Secondary</span>
-			<span class="tag tag-rounded tag-success">Success</span>
-			<span class="tag tag-rounded tag-danger">Danger</span>
-			<span class="tag tag-rounded tag-caution">Caution</span>
-			<span class="tag tag-rounded tag-info">Info</span>
+			<span class="tag tag-rounded bg-primary">Primary</span>
+			<span class="tag tag-rounded bg-secondary">Secondary</span>
+			<span class="tag tag-rounded bg-success">Success</span>
+			<span class="tag tag-rounded bg-danger">Danger</span>
+			<span class="tag tag-rounded bg-caution">Caution</span>
+			<span class="tag tag-rounded bg-info">Info</span>
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded tag-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-rounded bg-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
 			</code>
 		</pre>
 		<h3 class="title title-3">Bordered Tags</h3>
 		<p>
 			You can create bordered tags, similar to cards; it even works with other modifiers. Cool!
 		</p>
-		<div class="card card-full">
-			<span class="tag tag-bordered-primary">Primary</span>
-			<span class="tag tag-bordered-secondary">Secondary</span>
-			<span class="tag tag-bordered-success">Success</span>
-			<span class="tag tag-bordered-danger">Danger</span>
-			<span class="tag tag-bordered-caution">Caution</span>
-			<span class="tag tag-bordered-info">Info</span>
+		<div class="card border-primary">
+			<span class="tag border-primary">Primary</span>
+			<span class="tag border-secondary">Secondary</span>
+			<span class="tag border-success">Success</span>
+			<span class="tag border-danger">Danger</span>
+			<span class="tag border-caution">Caution</span>
+			<span class="tag border-info">Info</span>
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-primary"</span>&gt;Primary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-secondary"</span>&gt;Secondary&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-success"</span>&gt;Success&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-danger"</span>&gt;Danger&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-caution"</span>&gt;Caution&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag border-info"</span>&gt;Info&lt;<span class="sc">/span</span>&gt;
 			</code>
 		</pre>
-		<h3 class="title title-3">Sized Tags <span class="tag tag-bordered-primary">WIP</span></h3>
+		<h3 class="title title-3">Sized Tags <span class="tag border-primary">WIP</span></h3>
 		<p>
 			Tag sizes can also be modified, and they still work with other tag modifiers.
 		</p>
 		<div class="card card-full">
-			<span class="tag tag-sm tag-bordered-primary">Small</span>
-			<span class="tag tag-bordered-primary">Standard</span>
-			<span class="tag tag-lg tag-bordered-primary">Large</span>
+			<span class="tag tag-sm bg-primary">Small</span>
+			<span class="tag bg-primary">Standard</span>
+			<span class="tag tag-lg bg-primary">Large</span>
 		</div>
 		<pre>
 			<code>
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-sm tag-bordered-primary"</span>&gt;Small&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-bordered-primary"</span>&gt;Standard&lt;<span class="sc">/span</span>&gt;
-&lt;<span class="sc">span class=</span><span class="vc">"tag tag-lg tag-bordered-primary"</span>&gt;Large&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-sm bg-primary"</span>&gt;Small&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag bg-primary"</span>&gt;Standard&lt;<span class="sc">/span</span>&gt;
+&lt;<span class="sc">span class=</span><span class="vc">"tag tag-lg bg-primary"</span>&gt;Large&lt;<span class="sc">/span</span>&gt;
 			</code>
 		</pre>
-		<h2 class="title title-2">Text Utilities</h2>
+		<h2 class="title title-2">Utilities</h2>
 		<h3 class="title title-3">Lists</h3>
 		<p>
 			We added a simple utility that just makes an unstyled list.
@@ -427,7 +413,7 @@ Cool People
 		</pre>
 		<h3 class="title title-3">Text Positioning</h3>
 		<p>
-			We added CSS classes that change <code><span class="sc">text-align</span></code> to left, center, and right.
+			We added CSS classes that change <code>text-align</code> to left, center, and right.
 		</p>
 		<div class="card card-full">
 			<p class="text-left">Left-aligned text</p>
@@ -460,8 +446,56 @@ Cool People
 &lt;<span class="sc">p class=</span><span class="vc">"text-5x"</span>&gt;5x Text&lt;<span class="sc">/p</span>&gt;
 			</code>
 		</pre>
+		<h2 class="title title-2">Blocks</h2>
+		<p><code>.block-responsive</code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
+		<img class="block-responsive" src="logo.png" alt="Really Cool Logo" />
+		<pre>
+			<code>
+&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span> /&gt;
+			</code>
+	 	</pre>
 
-		<h2 class="title title-2">Navbar <span class="tag tag-bordered-primary">WIP</span></h2>
+		<p><code>.block-balance</code> does something similar, except it also sets <code>margin-left</code> and <code>margin-right</code> to <code>auto</code></p>.
+		<img class="block-balance" src="logo.png" alt="Really Cool Logo" />
+		<pre>
+			<code>
+&lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span> /&gt;
+			</code>
+	 	</pre>
+		<h2 class="title title-2">Experiments <span class="tag border-primary">WIP</span></h2>
+		<p>
+			Experiments are components or elements that are not production-ready, but rather just testing new ideas. You shouldn't use these in production (and we don't include them in the default release).
+		</p>
+		<h3 class="title title-3">Dropdowns <span class="tag border-primary">WIP</span></h3>
+		<p>Dropdowns are an extension of our buttons. Unlike most dropdown stylings, these ones are CSS only. In addition, they work with any of our colours in our colour map.</p>
+		<div class="dropdown">
+				<a class="button button-primary">Dropdown</a>
+				<div class="dropdown-content">
+					<ul class="list-unstyled">
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+						<li><a>Dropdown link</a></li>
+					</ul>
+				</div>
+		</div>
+		<pre>
+			<code>
+&lt;<span class="sc">div class=</span><span class="vc">"dropdown"</span>&gt;
+	&lt;<span class="sc">a class=</span><span class="vc">"button button-primary"</span>&gt;Mouse over me&lt;/<span class="sc">a</span>&gt;
+	&lt;<span class="sc">div class=</span><span class="vc">"dropdown-content"</span>&gt;
+		&lt;<span class="sc">ul class=</span><span class="vc">"list-unstyled"</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+				&lt;<span class="sc">li</span>&gt;&lt;<span class="sc">a</span>&gt;Dropdown link&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+			&lt;/<span class="sc">ul</span>&gt;
+	 &lt;/<span class="sc">div</span>&gt;
+&lt;/<span class="sc">div</span>&gt;
+			</code>
+		</pre>
+
+		<h3 class="title title-3">Navbar <span class="tag border-primary">WIP</span></h3>
 		<p>
 			Here are some navbar-esque components. While they aren't responsive in the traditional sense (no hamburger menu), they are compact enough to work on most screen sizes. You can also attach <code>.fixed-top</code> to the <code>nav</code> element to make it stick to the top of the screen.
 		</p>
@@ -482,30 +516,14 @@ Cool People
 	&lt;<span class="sc">div class=</span><span class="vc">"nav-main"</span>&gt;
 		&lt;<span class="sc">a class=</span><span class="vc">"nav-title text-primary"</span>&gt;Title&lt;/<span class="sc">a</span>&gt;
 		&lt;<span class="sc">ul class=</span><span class="vc">"nav-list"</span>&gt;
-			&lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&lt;/<span class="sc">li</span>&gt;
-			&lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;< class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&lt;/<span class="sc">li</span>&gt;
+			&lt;<span class="sc">li class=</span><span class="vc">"nav-item active"</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
+			&lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&lt;/<span class="sc">li</span>&gt;
 			&lt;<span class="sc">li class=</span><span class="vc">"nav-item</span>&gt;&lt;<span class="sc">a</span>&gt;Item&lt;/<span class="sc">a</span>&gt;&lt;/<span class="sc">li</span>&gt;
 		&lt;/<span class="sc">ul</span>&gt;
 	&lt;/<span class="sc">div</span>&gt;
 &lt;/<span class="sc">nav</span>&gt;
 			</code>
 		</pre>
-		<h2 class="title title-2">Images</h2>
-		<p><code><span class="sc">.block-responsive</span></code> is a simple class: it makes any block element (like an image) expand to its parent width or its original width, whichever comes first.</p>
-		<img class="block-responsive" src="logo.png" alt="Really Cool Logo" />
-		<pre>
-			<code>
-&lt;<span class="sc">img class=</span><span class="vc">"block-responsive"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
-			</code>
-	 	</pre>
-
-		<p><code><span class="sc">.block-balance</span></code> does something similar, except it also sets <code><span class="sc">margin-left</span></code> and <code><span class="sc">margin-right</span></code> to <code><span class="sc">auto</span></code></p>
-		<img class="block-balance" src="logo.png" alt="Really Cool Logo" />
-		<pre>
-			<code>
-&lt;<span class="sc">img class=</span><span class="vc">"block-balance"</span> <span class="sc">src=</span><span class="vc">"logo.png"</span>&gt;
-			</code>
-	 	</pre>
 
 		<footer class="text-center">
 			<a rel="noopener" href="https://github.com/malsf21/liteweight"><span class="fa fa-github fa-5x"></span></a>

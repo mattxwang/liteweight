@@ -1,0 +1,19 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding-top:2em;
+    display: none;
+    position: absolute;
+    background-color: $off-white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    border-radius:$border-radius;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

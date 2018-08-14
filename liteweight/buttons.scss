@@ -21,13 +21,6 @@
 
 @each $key, $value in $colours {
   .button-#{$key} {
-    background-color: $value;
-    color: $white;
-  }
-}
-
-@each $key, $value in $colours {
-  .button-#{$key} {
     background: none;
     border: 1px solid $value;
     color: $value;
@@ -35,31 +28,11 @@
     &:hover {
       background-color: $value;
       @if $value == $white{
-        color: $black;
+        color: $font-normal;
       }
       @else{
         color: $white;
       }
     }
   }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    padding-top:2em;
-    display: none;
-    position: absolute;
-    background-color: $off-white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    border-radius:$border-radius;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }

@@ -49,38 +49,44 @@ body {
 
 .bg-primary {
   background-color: #E95420;
-  color: white; }
+  color: #FFFFFF; }
+
+.border-primary {
+  border: 1px solid #E95420; }
 
 .border-top-primary {
-  border-top: 2px solid #E95420; }
+  border-top: 1px solid #E95420; }
 
 .border-right-primary {
-  border-right: 2px solid #E95420; }
+  border-right: 1px solid #E95420; }
 
 .border-bottom-primary {
-  border-bottom: 2px solid #E95420; }
+  border-bottom: 1px solid #E95420; }
 
 .border-left-primary {
-  border-left: 2px solid #E95420; }
+  border-left: 1px solid #E95420; }
 
 .text-secondary {
   color: #7AD0ED !important; }
 
 .bg-secondary {
   background-color: #7AD0ED;
-  color: white; }
+  color: #FFFFFF; }
+
+.border-secondary {
+  border: 1px solid #7AD0ED; }
 
 .border-top-secondary {
-  border-top: 2px solid #7AD0ED; }
+  border-top: 1px solid #7AD0ED; }
 
 .border-right-secondary {
-  border-right: 2px solid #7AD0ED; }
+  border-right: 1px solid #7AD0ED; }
 
 .border-bottom-secondary {
-  border-bottom: 2px solid #7AD0ED; }
+  border-bottom: 1px solid #7AD0ED; }
 
 .border-left-secondary {
-  border-left: 2px solid #7AD0ED; }
+  border-left: 1px solid #7AD0ED; }
 
 .main-body {
   margin: 0 auto;
@@ -150,9 +156,11 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.link-white {
-  color: #FFFFFF;
-  text-decoration: underline; }
+.link-primary {
+  color: #E95420; }
+
+.link-secondary {
+  color: #7AD0ED; }
 
 .text-left {
   text-align: left; }
@@ -173,13 +181,7 @@ a {
 
 .card-full {
   background-color: #F5f7F9;
-  border-bottom: 1px solid #D8DEE9; }
-
-.card-bordered-primary {
-  border: 1px solid #E95420; }
-
-.card-bordered-secondary {
-  border: 1px solid #7AD0ED; }
+  border-bottom: 2px solid #D8DEE9; }
 
 code {
   border-radius: 3px;
@@ -235,9 +237,6 @@ blockquote p {
   font-size: 1rem;
   border-radius: 3px; }
 
-.tag-full {
-  background-color: #F5f7F9; }
-
 .tag-rounded {
   border-radius: 500px; }
 
@@ -250,25 +249,5 @@ blockquote p {
   font-size: 1.25rem;
   padding: 0 1.5rem;
   line-height: 2.5; }
-
-.tag-primary {
-  background-color: #E95420;
-  color: #FFFFFF;
-  border-bottom: 1px solid #D8DEE9; }
-
-.tag-bordered-primary {
-  border: 1px solid #E95420;
-  color: #E95420;
-  font-weight: normal; }
-
-.tag-secondary {
-  background-color: #7AD0ED;
-  color: #FFFFFF;
-  border-bottom: 1px solid #D8DEE9; }
-
-.tag-bordered-secondary {
-  border: 1px solid #7AD0ED;
-  color: #7AD0ED;
-  font-weight: normal; }
 
 /*# sourceMappingURL=liteweight-nexa.css.map */
