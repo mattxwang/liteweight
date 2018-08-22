@@ -10,15 +10,17 @@ License MIT
 by Matthew Wang https://matthewwang.me
    Nick O'Brien http://obrien.tech
 
-Liteweight Nexa Edition. Liteweight Nexa is a modified version of Liteweight Matt uses for his website, at https://matthewwang.me
+Liteweight Duo Edition. Liteweight Duo is a two-colour version of Liteweight, which Matt uses for his website (at https://matthewwang.me)
 */
 
 // All of these files can be found and edited in liteweight
 
 @import "liteweight/variables";
-@import "theme/nexa";
+@import "theme/duo";
 @import "liteweight/basics";
 @import "liteweight/text-utilities";
+@import "liteweight/buttons";
 @import "liteweight/cards";
 @import "liteweight/elements";
+@import "liteweight/navbar";
 @import "liteweight/tags"

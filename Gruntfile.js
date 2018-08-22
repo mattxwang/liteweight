@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         files: {
           'dist/liteweight.css': 'liteweight.scss',
           'dist/liteweight-full.css': 'liteweight-full.scss',
-          'dist/theme/liteweight-nexa.css': 'liteweight-nexa.scss',
+          'dist/theme/liteweight-duo.css': 'liteweight-duo.scss',
           'dist/theme/liteweight-omun.css': 'liteweight-omun.scss'
         }
       }

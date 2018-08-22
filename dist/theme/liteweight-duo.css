@@ -13,24 +13,6 @@ by Matthew Wang https://matthewwang.me
 
 Liteweight Nexa Edition. Liteweight Nexa is a modified version of Liteweight Matt uses for his website, at https://matthewwang.me
 */
-@font-face {
-  font-family: Nexa;
-  src: url(../fonts/nexa/nexa_light.otf); }
-
-@font-face {
-  font-family: Nexa;
-  font-weight: bold;
-  src: url(../fonts/nexa/nexa_bold.otf); }
-
-@font-face {
-  font-family: Nexa Slab;
-  src: url(../fonts/nexaslab/nexa_slab_regular.otf); }
-
-@font-face {
-  font-family: Nexa Slab;
-  font-weight: bold;
-  src: url(../fonts/nexaslab/nexa_slab_bold.otf); }
-
 html {
   box-sizing: border-box;
   padding: 0;
@@ -40,7 +22,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Nexa", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: #566B78; }
 
@@ -87,6 +69,50 @@ body {
 
 .border-left-secondary {
   border-left: 1px solid #7AD0ED; }
+
+.text-black {
+  color: #000000 !important; }
+
+.bg-black {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+.border-black {
+  border: 1px solid #000000; }
+
+.border-top-black {
+  border-top: 1px solid #000000; }
+
+.border-right-black {
+  border-right: 1px solid #000000; }
+
+.border-bottom-black {
+  border-bottom: 1px solid #000000; }
+
+.border-left-black {
+  border-left: 1px solid #000000; }
+
+.text-white {
+  color: #FFFFFF !important; }
+
+.bg-white {
+  background-color: #FFFFFF;
+  color: #566B78; }
+
+.border-white {
+  border: 1px solid #FFFFFF; }
+
+.border-top-white {
+  border-top: 1px solid #FFFFFF; }
+
+.border-right-white {
+  border-right: 1px solid #FFFFFF; }
+
+.border-bottom-white {
+  border-bottom: 1px solid #FFFFFF; }
+
+.border-left-white {
+  border-left: 1px solid #FFFFFF; }
 
 .main-body {
   margin: 0 auto;
@@ -162,6 +188,12 @@ a {
 .link-secondary {
   color: #7AD0ED; }
 
+.link-black {
+  color: #000000; }
+
+.link-white {
+  color: #FFFFFF; }
+
 .text-left {
   text-align: left; }
 
@@ -170,6 +202,55 @@ a {
 
 .text-right {
   text-align: right; }
+
+/* Buttons */
+.button {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #F5f7F9;
+  margin: 0.5rem 0.5rem;
+  padding: 0.125rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 2; }
+
+.button:hover {
+  text-decoration: none; }
+
+.button-block {
+  display: block; }
+
+.button-primary {
+  background: none;
+  border: 1px solid #E95420;
+  color: #E95420; }
+  .button-primary:hover {
+    background-color: #E95420;
+    color: #FFFFFF; }
+
+.button-secondary {
+  background: none;
+  border: 1px solid #7AD0ED;
+  color: #7AD0ED; }
+  .button-secondary:hover {
+    background-color: #7AD0ED;
+    color: #FFFFFF; }
+
+.button-black {
+  background: none;
+  border: 1px solid #000000;
+  color: #000000; }
+  .button-black:hover {
+    background-color: #000000;
+    color: #FFFFFF; }
+
+.button-white {
+  background: none;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF; }
+  .button-white:hover {
+    background-color: #FFFFFF;
+    color: #566B78; }
 
 /* Cards */
 .card {
@@ -226,6 +307,58 @@ blockquote:before {
 blockquote p {
   display: inline; }
 
+nav {
+  width: 100%; }
+
+.nav-main {
+  display: block;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: inherit;
+  border-radius: inherit;
+  color: #566B78; }
+
+.nav-right {
+  float: right; }
+
+.nav-title {
+  float: left;
+  display: block;
+  font-size: 1.5em;
+  padding: 0.25rem 1.25rem 0.4rem 0;
+  text-decoration: none; }
+
+.nav-title:hover {
+  text-decoration: none; }
+
+.nav-item {
+  float: left; }
+
+.nav-item a {
+  display: block;
+  color: #566B78;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none; }
+
+.active {
+  border-bottom: 3px solid #E95420; }
+
+.nav-item a:hover {
+  background-color: #C8CACC;
+  text-decoration: none; }
+
+.nav-item .active {
+  color: #F5f7F9; }
+
 /* Tags */
 .tag {
   display: inline-block;
@@ -250,4 +383,4 @@ blockquote p {
   padding: 0 1.5rem;
   line-height: 2.5; }
 
-/*# sourceMappingURL=liteweight-nexa.css.map */
+/*# sourceMappingURL=liteweight-duo.css.map */
