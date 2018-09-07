@@ -6,7 +6,6 @@ branches:
 node_js:
   - "9"
   - "8"
-  - "7"
 
 script:
   - npm run build
