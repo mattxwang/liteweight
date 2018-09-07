@@ -1,9 +1,11 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
+  const sass = require('node-sass');
   // Project configuration.
   grunt.initConfig({
     sass: {
       options: {
+        implementation: sass,
         sourceMap: true
       },
       dist: {
