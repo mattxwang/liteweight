@@ -28,7 +28,7 @@ body {
   color: #E95420 !important; }
 
 .bg-primary {
-  background-color: #E95420;
+  background-color: #E95420 !important;
   color: #FFFFFF; }
 
 .border-primary {
@@ -50,7 +50,7 @@ body {
   color: #7AD0ED !important; }
 
 .bg-secondary {
-  background-color: #7AD0ED;
+  background-color: #7AD0ED !important;
   color: #FFFFFF; }
 
 .border-secondary {
@@ -72,7 +72,7 @@ body {
   color: #2BD937 !important; }
 
 .bg-success {
-  background-color: #2BD937;
+  background-color: #2BD937 !important;
   color: #FFFFFF; }
 
 .border-success {
@@ -94,7 +94,7 @@ body {
   color: #F01A1A !important; }
 
 .bg-danger {
-  background-color: #F01A1A;
+  background-color: #F01A1A !important;
   color: #FFFFFF; }
 
 .border-danger {
@@ -116,7 +116,7 @@ body {
   color: #D9D92B !important; }
 
 .bg-caution {
-  background-color: #D9D92B;
+  background-color: #D9D92B !important;
   color: #FFFFFF; }
 
 .border-caution {
@@ -138,7 +138,7 @@ body {
   color: #6878ED !important; }
 
 .bg-info {
-  background-color: #6878ED;
+  background-color: #6878ED !important;
   color: #FFFFFF; }
 
 .border-info {
@@ -160,7 +160,7 @@ body {
   color: #FFFFFF !important; }
 
 .bg-white {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   color: #566B78; }
 
 .border-white {
@@ -182,7 +182,7 @@ body {
   color: #000000 !important; }
 
 .bg-black {
-  background-color: #000000;
+  background-color: #000000 !important;
   color: #FFFFFF; }
 
 .border-black {

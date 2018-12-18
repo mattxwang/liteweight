@@ -18,7 +18,7 @@ body {
 		color: $value !important;
 	}
   .bg-#{$key}{
-    background-color: $value;
+    background-color: $value !important;
     @if $value == $white{
       color: $font-normal;
     }

@@ -30,7 +30,7 @@ body {
   color: #E95420 !important; }
 
 .bg-primary {
-  background-color: #E95420;
+  background-color: #E95420 !important;
   color: #FFFFFF; }
 
 .border-primary {
@@ -52,7 +52,7 @@ body {
   color: #7AD0ED !important; }
 
 .bg-secondary {
-  background-color: #7AD0ED;
+  background-color: #7AD0ED !important;
   color: #FFFFFF; }
 
 .border-secondary {
@@ -74,7 +74,7 @@ body {
   color: #000000 !important; }
 
 .bg-black {
-  background-color: #000000;
+  background-color: #000000 !important;
   color: #FFFFFF; }
 
 .border-black {
@@ -96,7 +96,7 @@ body {
   color: #FFFFFF !important; }
 
 .bg-white {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   color: #566B78; }
 
 .border-white {
