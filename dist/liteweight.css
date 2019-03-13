@@ -224,7 +224,8 @@ body {
 
 .fixed-top {
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 999; }
 
 .text-2x {
   font-size: 2em; }
