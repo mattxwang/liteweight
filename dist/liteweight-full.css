@@ -507,6 +507,21 @@ nav {
 .nav-item .active {
   color: #F5f7F9; }
 
+table.table {
+  display: table;
+  width: 100%;
+  height: auto; }
+  table.table td, table.table th {
+    border: 1px solid #566B78;
+    border-width: 0 0 1px; }
+  table.table thead td, table.table thead th {
+    border: 2px solid #566B78;
+    border-width: 0 0 2px; }
+  table.table th {
+    text-align: left; }
+  table.table tbody tr:last-child td, table.table tbody tr:last-child th {
+    border-bottom-width: 0; }
+
 /* Tags */
 .tag {
   display: inline-block;

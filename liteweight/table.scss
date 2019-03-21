@@ -1,0 +1,27 @@
+table.table{
+    display: table;
+    width: 100%;
+    height: auto;
+    td, th{
+        border: 1px solid $light-grey;
+        border-width: 0 0 1px;
+    }
+    thead{
+        td, th{
+            border: 2px solid $light-grey;
+            border-width: 0 0 2px;
+        }
+    }
+    th{
+        text-align: left;
+    }
+    tbody{
+        tr{
+            &:last-child{
+                td, th{
+                    border-bottom-width: 0;
+                }
+            }
+        }
+    }
+}
