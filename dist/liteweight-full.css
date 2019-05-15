@@ -510,17 +510,81 @@ nav {
 table.table {
   display: table;
   width: 100%;
-  height: auto; }
+  height: auto;
+  border-collapse: collapse; }
   table.table td, table.table th {
     border: 1px solid #566B78;
-    border-width: 0 0 1px; }
+    border-width: 0 0 1px 0;
+    padding: 0.5em; }
   table.table thead td, table.table thead th {
     border: 2px solid #566B78;
-    border-width: 0 0 2px; }
+    border-width: 0 0 2px 0;
+    padding: 0.5em; }
   table.table th {
     text-align: left; }
   table.table tbody tr:last-child td, table.table tbody tr:last-child th {
     border-bottom-width: 0; }
+
+table.table-condensed td, table.table-condensed th {
+  padding: 0;
+  padding-left: 0.5em; }
+
+table.table-bordered td, table.table-bordered th {
+  border-width: 1px; }
+
+table.table-bordered thead td, table.table-bordered thead th {
+  border-width: 1px 1px 2px 1px; }
+
+table.table-bordered tbody tr:last-child td, table.table-bordered tbody tr:last-child th {
+  border-bottom-width: 1px; }
+
+.table-border-primary td, .table-border-primary th {
+  border-color: #E95420 !important; }
+
+.table-border-primary thead td, .table-border-primary thead th {
+  border-color: #E95420 !important; }
+
+.table-border-secondary td, .table-border-secondary th {
+  border-color: #7AD0ED !important; }
+
+.table-border-secondary thead td, .table-border-secondary thead th {
+  border-color: #7AD0ED !important; }
+
+.table-border-success td, .table-border-success th {
+  border-color: #2BD937 !important; }
+
+.table-border-success thead td, .table-border-success thead th {
+  border-color: #2BD937 !important; }
+
+.table-border-danger td, .table-border-danger th {
+  border-color: #F01A1A !important; }
+
+.table-border-danger thead td, .table-border-danger thead th {
+  border-color: #F01A1A !important; }
+
+.table-border-caution td, .table-border-caution th {
+  border-color: #D9D92B !important; }
+
+.table-border-caution thead td, .table-border-caution thead th {
+  border-color: #D9D92B !important; }
+
+.table-border-info td, .table-border-info th {
+  border-color: #6878ED !important; }
+
+.table-border-info thead td, .table-border-info thead th {
+  border-color: #6878ED !important; }
+
+.table-border-white td, .table-border-white th {
+  border-color: #FFFFFF !important; }
+
+.table-border-white thead td, .table-border-white thead th {
+  border-color: #FFFFFF !important; }
+
+.table-border-black td, .table-border-black th {
+  border-color: #000000 !important; }
+
+.table-border-black thead td, .table-border-black thead th {
+  border-color: #000000 !important; }
 
 /* Tags */
 .tag {
