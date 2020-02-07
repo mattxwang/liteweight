@@ -360,6 +360,88 @@ nav {
 .nav-item .active {
   color: #F5f7F9; }
 
+#mobile-nav {
+  display: none; }
+
+.hamburger-icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .hamburger-icon:hover {
+    cursor: pointer; }
+    .hamburger-icon:hover .bar {
+      margin: 3px 0px;
+      background-color: black; }
+  .hamburger-icon .bar {
+    align-self: center;
+    width: 50%;
+    height: 3px;
+    border-radius: 4px;
+    margin: 2px 0px;
+    transition: 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    background-color: gray; }
+
+#menu-toggle {
+  display: none; }
+
+#hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -20;
+  transform: translate3d(0, -100%, 0);
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98); }
+  #hamburger-menu ul.nav-items {
+    list-style: none;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    float: none;
+    padding: 0px; }
+  #hamburger-menu ul.nav-items li {
+    display: block;
+    margin: 30px auto;
+    padding: 0px;
+    text-transform: lowercase;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    transition: all 1.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); }
+    #hamburger-menu ul.nav-items li.nav-button {
+      padding: 10px 20px; }
+    #hamburger-menu ul.nav-items li.nav-button:hover {
+      color: white; }
+  #hamburger-menu ul.nav-items li:hover {
+    color: #999999;
+    cursor: pointer; }
+
+#menu-toggle:checked + #hamburger-menu {
+  transform: translate3d(0, 0, 0); }
+  #menu-toggle:checked + #hamburger-menu ul.nav-items li {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
+
+@media (max-width: 700px) {
+  #desktop-nav {
+    display: none; }
+  #mobile-nav {
+    display: inline-block; } }
+
 /* Tags */
 .tag {
   display: inline-block;
